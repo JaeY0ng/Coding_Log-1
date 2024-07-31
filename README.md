@@ -1,9 +1,9 @@
 # 1. OSI 7 계층 (7/30) - SW_Basic
-`Network : 정보 교환을 위해 통신 장치를 연결한 통신망`
-`1. LAN (Local Area Network) : 근거리 고속 통신망`
-`2. WAN (Wide Area Network) : 원거리 (광대역) 안정적 통신망`
+```Network : 정보 교환을 위해 통신 장치를 연결한 통신망
+1. LAN (Local Area Network) : 근거리 고속 통신망
+2. WAN (Wide Area Network) : 원거리 (광대역) 안정적 통신망
 
 Internet : 전 세계적 통신망의 집합
 Protocol : 네트워크 통신을 위한 규칙 (문법 + 의미 + 순서)
-Network Model : 호환을 위한 통신망 제작 모델 / 문제 해결`
+Network Model : 호환을 위한 통신망 제작 모델 / 문제 해결```
 
