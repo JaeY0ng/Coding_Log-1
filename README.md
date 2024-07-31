@@ -1,4 +1,7 @@
 # 1. SW_Basic
+
+OSI 7 계층
+---------
 #### 7/30
 
 ``` 
@@ -51,3 +54,6 @@
  * ICMP (Internet Control Message Protocol) : 통신 가능 여부 판단 (ex Ping)
  * ARP (Address Resolution Protocol) : MAC 주소와 IP 주소 연결
  * Routing Protocol : 최적 경로 탐색
+
+
+
