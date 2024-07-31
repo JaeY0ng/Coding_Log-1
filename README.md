@@ -77,10 +77,12 @@ IP : 10.5.4.9
 사용 호스트 IP : 10.5.4.9
 호스트 범위 : 10.5.4.1 ~ 10.5.4.254
 ```
+ <br>
 ### Cisco 실습
 1. 지정 IP 입력
 2. PC, Rounter에 맞는 IP, 서브넷 마스크 입력
 3. ICMP로 실행 확인
+
 ![353716662-dc55db80-cfc0-4086-b747-3477cf621ac8](https://github.com/user-attachments/assets/af429c20-9678-4879-be9c-b34a82547fe9)
 
  <br>
@@ -89,6 +91,7 @@ IP : 10.5.4.9
 * 정적 : 관리자가 직접 경로 설정
   -Static : 설정한 진행 방향 (목표 노드 / 서브넷 마스크 / 진행 방향 라우터 IP)
   -Defualt : 모든 진행 방향 = 진행 방향이 하나인 말단 라우터 (0.0.0.0 / 0.0.0.0 진행 방향 라우터 IP)
+  
   ![353714928-16ab3bfb-05b7-419b-8eba-025ca8720f0c](https://github.com/user-attachments/assets/e102a9fa-9663-48da-b2d5-5b5fbc770cc9)
  
 * 동적 : 자동 최적 경로 계산
@@ -98,6 +101,7 @@ IP : 10.5.4.9
 **Sever**
 * DNS (Domain Name Service) : 문자 주소 + 숫자 주소 = www.(naver.com) + 223.130.200.236
 * Web Service : 하이퍼텍스트 형식의 문서파일 제공 (Hyper Text Markup Language, Hyper Text Transfer Protocol)
+* 
 [353731743-607360c9-7f04-48f6-b979-14106ca91868](https://github.com/user-attachments/assets/b7693512-bb49-44a4-9cd5-a3c756aa7b5c)
 
   
