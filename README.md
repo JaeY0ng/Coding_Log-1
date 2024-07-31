@@ -1,4 +1,4 @@
-# 1. OSI 7 계층 (7/30) - SW_Basic
+# 1. SW_Basic - OSI 7 계층 (7/30)
 ```
 Network : 정보 교환을 위해 통신 장치를 연결한 통신망
 1. LAN (Local Area Network) : 근거리 고속 통신망
@@ -15,6 +15,8 @@ Network Model : 호환을 위한 통신망 제작 모델 / 문제 해결
 
 OSI 7 계층
 ----------
+|OSI 7 모델|TCP/IP|
+
 OSI 1 물리 계층 : 신호 전달을 위한 물리적 연결
 1. 케이블 : 장치, 네트워크를 연결하는 물리적 매체로 데이터를 전송하는 전선 <br>
 -LAN Cable : UTP, FTP, STP
