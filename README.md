@@ -81,7 +81,7 @@ IP : 10.5.4.9
  
 ### Cisco 실습
 1. 지정 IP 입력
-2. PC, Rounter에 맞는 IP, 서브넷 마스크 입력
+2. PC, Router에 맞는 IP, 서브넷 마스크 입력
 3. ICMP로 실행 확인
 
 ![353716662-dc55db80-cfc0-4086-b747-3477cf621ac8](https://github.com/user-attachments/assets/af429c20-9678-4879-be9c-b34a82547fe9)
@@ -101,8 +101,8 @@ IP : 10.5.4.9
  
 **Sever**
 * DNS (Domain Name Service) : 문자 주소 + 숫자 주소 = www.(naver.com) + 223.130.200.236
-* Web Service : 하이퍼텍스트 형식의 문서파일 제공 (Hyper Text Markup Language, Hyper Text Transfer Protocol)
-* 
-[353731743-607360c9-7f04-48f6-b979-14106ca91868](https://github.com/user-attachments/assets/b7693512-bb49-44a4-9cd5-a3c756aa7b5c)
+* Web Service : 하이퍼텍스트 형식의 문서파일 제공 (Hyper Text Markup Language, Hyper Text Transfer Protocol) 
+
+![353731743-607360c9-7f04-48f6-b979-14106ca91868](https://github.com/user-attachments/assets/1ae25c00-c4b7-4165-b7c0-9872d6ed05cc)
 
   
