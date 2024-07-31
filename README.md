@@ -52,8 +52,7 @@
  * ARP (Address Resolution Protocol) : MAC 주소와 IP 주소 연결
  * Routing Protocol : 최적 경로 탐색
 
-IPv4
-----
+# IPv4
 IPv4 통신방식 : Unicast, Broadcast, Multicast
 서브넷 마스크 : IP 지정
 클래스풀 : IP를 규격화된 클래스로 구분하는 방식 = 10.12.31.0 / 24 -> 255.255.255.0
