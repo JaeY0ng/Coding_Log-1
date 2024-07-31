@@ -13,6 +13,7 @@
  -전기 에너지, 통신망 필요
 ```
 
+
 7 OSI 계층
 ----------
 |7 OSI 모델|TCP/IP|역할|
@@ -37,7 +38,7 @@
  * WAN : HDLC, Frame-relay, PPP, ATM
 
 
-<span style="font-size: 14px"> 3. OSI 네트워크 계층 : 경로 탐색 <span>
+<span style="font-size: 17px"> 3. OSI 네트워크 계층 : 경로 탐색 <span>
  * Router
  * IP : 기본 주소 (IPv4, Ipv6)
  * ICMP (Internet Control Message Protocol) : 통신 가능 여부 판단 (ex Ping)
