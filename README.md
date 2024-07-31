@@ -29,13 +29,15 @@
  * 리피터 : 신호 증폭, 재생
  * 허브 : 네트워크 장치를 연결하여 데이터 중계, 전송 -> 스위치로 대체
 
+
 2. OSI 데이터 링크 계층 : 장치간 운송방식 지정 -> 신뢰성
  * L2 Switch <- 초기 이더넷 CSMA/CD의 충돌
  * 장치 식별 + 오류 제어 + 흐름 제어
  * LAN : Ethernet
  * WAN : HDLC, Frame-relay, PPP, ATM
 
-3. OSI 네트워크 계층 : 경로 탐색
+
+<span style="font-size: 12px"> 3. OSI 네트워크 계층 : 경로 탐색 <span>
  * Router
  * IP : 기본 주소 (IPv4, Ipv6)
  * ICMP (Internet Control Message Protocol) : 통신 가능 여부 판단 (ex Ping)
