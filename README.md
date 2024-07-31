@@ -1,6 +1,4 @@
 # 1. SW_Basic
-#### 7/30
-
 ``` 
 * Network : 정보 교환을 위해 통신 장치를 연결한 통신망
 1. LAN (Local Area Network) : 근거리 고속 통신망
@@ -17,7 +15,7 @@
 
 <br>
 
-7 OSI 계층
+7 OSI 계층 (7/30)
 ----------
 |7 OSI 모델|TCP/IP|역할|
 |-|-|-|
@@ -52,13 +50,14 @@
  * ARP (Address Resolution Protocol) : MAC 주소와 IP 주소 연결
  * Routing Protocol : 최적 경로 탐색
 
-# IPv4
-IPv4 통신방식 : Unicast, Broadcast, Multicast
-서브넷 마스크 : IP 지정
-클래스풀 : IP를 규격화된 클래스로 구분하는 방식 = 10.12.31.0 / 24 -> 255.255.255.0
-클래스리스 : 클래스 구분 없이 IP범위를 가변적으로 구현 = 10.21.31.0 / 8 -> 255.0.0.0 
-* A클래스 : 8비트 = 255.0.0.0
-* B클래스 : 16비트 = 255.255.0.0
+IPv4 (7/30 ~ 7/31)
+----
+IPv4 통신방식 : Unicast, Broadcast, Multicast <br>
+서브넷 마스크 : IP 지정 <br>
+클래스풀 : IP를 규격화된 클래스로 구분하는 방식 = 10.12.31.0 / 24 -> 255.255.255.0 <br>
+클래스리스 : 클래스 구분 없이 IP범위를 가변적으로 구현 = 10.21.31.0 / 8 -> 255.0.0.0  <br>
+* A클래스 : 8비트 = 255.0.0.0 
+* B클래스 : 16비트 = 255.255.0.0 
 * C클래스 : 24비트 = 255.255.255.0
 ```
 IP 주소 표현
@@ -78,3 +77,23 @@ IP : 10.5.4.9
 사용 호스트 IP : 10.5.4.9
 호스트 범위 : 10.5.4.1 ~ 10.5.4.254
 ```
+### Cisco 실습
+1. 지정 IP 입력
+2. PC, Rounter에 맞는 IP, 서브넷 마스크 입력
+3. ICMP로 실행 확인
+![353716662-dc55db80-cfc0-4086-b747-3477cf621ac8](https://github.com/user-attachments/assets/af429c20-9678-4879-be9c-b34a82547fe9)
+
+Routing Protocol : 경로 탐색
+* 정적 : 관리자가 직접 경로 설정
+  -Static : 설정한 진행 방향 (목표 노드 / 서브넷 마스크 / 진행 방향 라우터 IP)
+  -Defualt : 모든 진행 방향 = 진행 방향이 하나인 말단 라우터 (0.0.0.0 / 0.0.0.0 진행 방향 라우터 IP)
+  ![353714928-16ab3bfb-05b7-419b-8eba-025ca8720f0c](https://github.com/user-attachments/assets/e102a9fa-9663-48da-b2d5-5b5fbc770cc9)
+ 
+* 동적 : 자동 최적 경로 계산
+
+Sever
+* DNS (Domain Name Service) : 문자 주소 + 숫자 주소 = www.(naver.com) + 223.130.200.236
+* Web Service : 하이퍼텍스트 형식의 문서파일 제공 (Hyper Text Markup Language, Hyper Text Transfer Protocol)
+[353731743-607360c9-7f04-48f6-b979-14106ca91868](https://github.com/user-attachments/assets/b7693512-bb49-44a4-9cd5-a3c756aa7b5c)
+
+  
