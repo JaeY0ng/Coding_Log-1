@@ -37,7 +37,7 @@
  * WAN : HDLC, Frame-relay, PPP, ATM
 
 
-<span style="font-size: 12px"> 3. OSI 네트워크 계층 : 경로 탐색 <span>
+<span style="font-size: 14px"> 3. OSI 네트워크 계층 : 경로 탐색 <span>
  * Router
  * IP : 기본 주소 (IPv4, Ipv6)
  * ICMP (Internet Control Message Protocol) : 통신 가능 여부 판단 (ex Ping)
