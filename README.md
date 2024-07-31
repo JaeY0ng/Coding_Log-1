@@ -38,7 +38,7 @@
  * WAN : HDLC, Frame-relay, PPP, ATM
 
 
-<span style="font-size: 17px"> 3. OSI 네트워크 계층 : 경로 탐색 </span>
+<span style="font-size: 12px; color: green">크기는 12px이고 색상은 초록색인 텍스트</span>
  * Router
  * IP : 기본 주소 (IPv4, Ipv6)
  * ICMP (Internet Control Message Protocol) : 통신 가능 여부 판단 (ex Ping)
