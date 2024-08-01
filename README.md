@@ -109,7 +109,7 @@ IP : 10.5.4.9
 **Sever**
 * DNS (Domain Name Service) : 문자 주소 + IP (숫자 주소) = www.naver.com + 223.130.200.236
 * Web Service : 하이퍼텍스트 형식의 문서파일 제공 (Hyper Text Markup Language, Hyper Text Transfer Protocol)
- 1. DNS server의 Services DNS에 웹사이트 문자 주소와 IP 추가
+ 1. DNS server의 Services DNS에 웹사이트 문자 주소와 IP 추가 (IP칸 DNS Server 미입력)
  2. 사이트 Server에 IP 입력 (IP 칸 DNS Server 미입력)
  3. PC IP칸에 DSN Server 입력 -> Web Browser에 검색으로 확인 가능
 
