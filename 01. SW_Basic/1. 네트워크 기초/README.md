@@ -1,4 +1,4 @@
-# 1. Newtwork Basic
+# 1. Newtwork Basic (7/29 ~ 8/1)
 ``` 
 * Network : 정보 교환을 위해 통신 장치를 연결한 통신망
 1. LAN (Local Area Network) : 근거리 고속 통신망
