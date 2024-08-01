@@ -1,9 +1,9 @@
 # Program
 ```
 * HardWare : PC의 부품    
-* SoftWare      
-   1. System Software : WindowOS, Linux, macOS
-   2. Application
+* SoftWare
+ 1. System Software : WindowOS, Linux, macOS
+ 2. Application
 ```
 * **MiddleWare : 하나의 시스템에서 앱을 동시에 실행, 연계시켜도 안정적으로 실행 가능 (Hardware + Software)**
   
