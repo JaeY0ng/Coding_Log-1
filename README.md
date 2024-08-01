@@ -52,7 +52,7 @@
 
  <br>
  
-IPv4 (7/30 ~ 7/31)
+IPv4 (7/30 ~ 8/1)
 ----
 * IPv4 통신방식 : Unicast, Broadcast, Multicast <br>
 * 서브넷 마스크 : IP 지정 <br>
