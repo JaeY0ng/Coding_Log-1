@@ -115,4 +115,4 @@ IP : 10.5.4.9
 
 ![DNS](https://github.com/user-attachments/assets/330b16eb-09cd-4ea9-b4fc-8c85cbcf677f)
 
-  
+(시험 : 1. IP 입력 / 2. / 3. 6번 Dynaamic DNS)
