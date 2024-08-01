@@ -97,16 +97,21 @@ IP : 10.5.4.9
   
   ![353714928-16ab3bfb-05b7-419b-8eba-025ca8720f0c](https://github.com/user-attachments/assets/e102a9fa-9663-48da-b2d5-5b5fbc770cc9)
  
-* 동적 (Distance Vector) : 전체 경로 학습 -> 자동 최적 경로 계산 <br>
-   -AS (Autonomous System) : 자치 시스템 = 관리자가 관리하는 라우터의 집합
-  1. IGP (Interior Gateway Protocol) -> RIP (Hop이 가장 적은 경로, Max = 15), EIGRP OSPF
-  2. EGP (Exterior Gateway Protocol) -> BGP
+* 동적 (Distance Vector) : 전체 경로 학습 -> 자동 최적 경로 계산 (네트워크 변화에 민감) <br>
+ -AS (Autonomous System) : 자치 시스템 = 관리자가 관리하는 라우터의 집합
+   1. IGP (Interior Gateway Protocol) -> RIP (Hop이 가장 적은 경로, Max = 15), EIGRP OSPF
+   2. EGP (Exterior Gateway Protocol) -> BGP
+      
+![RIP](https://github.com/user-attachments/assets/62be8f63-f5b8-414a-bdd1-45a227ab89b0)
 
  <br>
  
 **Sever**
 * DNS (Domain Name Service) : 문자 주소 + 숫자 주소 = www.(naver.com) + 223.130.200.236
-* Web Service : 하이퍼텍스트 형식의 문서파일 제공 (Hyper Text Markup Language, Hyper Text Transfer Protocol) 
+* Web Service : 하이퍼텍스트 형식의 문서파일 제공 (Hyper Text Markup Language, Hyper Text Transfer Protocol)
+ 1. DNS server에 웹사이트 문자 주소, IP 입력
+ 2. 사이트 Server에 IP 입력 (DNS Server 미입력)
+ 3. PC에 DSN Server 입력 -> 웹사이트 칸에 검색으로 확인 가능
 
 ![353731743-607360c9-7f04-48f6-b979-14106ca91868](https://github.com/user-attachments/assets/1ae25c00-c4b7-4165-b7c0-9872d6ed05cc)
 
