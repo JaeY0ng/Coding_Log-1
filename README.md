@@ -90,14 +90,17 @@ IP : 10.5.4.9
 
  <br>
  
-**Routing Protocol : 경로 탐색 (Router 간의 통신) **
+**Routing Protocol : 경로 탐색 (Router 간의 통신)**
 * 정적 : 관리자가 직접 경로 설정 <br>
   -Static : 설정한 진행 방향 (목표 노드 / 서브넷 마스크 / 진행 방향 라우터 IP) <br>
   -Defualt : 모든 진행 방향 = 진행 방향이 하나인 말단 라우터 (0.0.0.0 / 0.0.0.0 진행 방향 라우터 IP) <br>
   
   ![353714928-16ab3bfb-05b7-419b-8eba-025ca8720f0c](https://github.com/user-attachments/assets/e102a9fa-9663-48da-b2d5-5b5fbc770cc9)
  
-* 동적 : 자동 최적 경로 계산
+* 동적 (Distance Vector) : 전체 경로 학습 -> 자동 최적 경로 계산 <br>
+   -AS (Autonomous System) : 자치 시스템 = 관리자가 관리하는 라우터의 집합
+  1. IGP (Interior Gateway Protocol) -> RIP (Hop이 가장 적은 경로, Max = 15), EIGRP OSPF
+  2. EGP (Exterior Gateway Protocol) -> BGP
 
  <br>
  
