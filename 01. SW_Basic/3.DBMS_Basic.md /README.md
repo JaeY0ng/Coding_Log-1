@@ -16,7 +16,7 @@
 
 ```
 * cmd 로그인
-mysql -u root -p (port ____);    // mysql -user root -password port 8125 (port 번호 변경 시)
+mysql -u root -p [port ____];    // mysql -user root -password port 8125 [port 번호 변경 시]
 
 * use : DB 위치 지정
 use mysql;
@@ -42,7 +42,7 @@ drop database dbex1;
 drop table tbl_ex;
 
 * alter : 변경 (add-삽입, change-수정, drop-삭제)
-alter table tbl_ex1 add column ex1_year int null (after tbl_addr);      // (after tbl_name) 삽입할 컬럼 위치
+alter table tbl_ex1 add column ex1_year int null [after tbl_addr];      // [after tbl_name] 삽입할 컬럼 위치
 alter table tbl_ex1 change column ex1_addr ex1_address varchar(1024) null;
 alter table tlb_ex1 drop ex1_year;
 ```
