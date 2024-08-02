@@ -11,3 +11,56 @@
 * DML (Date Manipulation Language) : 데이터 조작어 - Select, Insert, Update, Delete
 * DCL (Date Control Language) : 권한 부여 - Grant, Revoke
 * TCL - Commit, Rollback
+
+**Structure**
+
+```
+* cmd 로그인
+mysql -u root -p (port ____);
+
+* use : DB 위치 지정
+use mysql;
+use dbex; 
+
+* show : 조회
+show databases;
+show tables;
+
+* desc : 세부 구조 조회
+desc tbl_example;
+
+* create : 생성
+create database dbex;
+create table tbl_ex;
+create table tbl_ex1(
+-> ex1_name varchar(10) primary key,     // varchar() : string,       primary key : 기본키 (not null)
+-> ex1_addr varchar(1024) null,
+-> ex1_age int not null);
+
+* drop : 삭제
+drop database dbex1;
+drop table tbl_ex;
+
+* alter : 자체 변경 (add-삽입, change-수정, drop-삭제)
+alter table tbl_ex1 add column ex1_year int null (after tbl_addr);      // (after tbl_name) 삽입할 컬럼 위치
+alter table tbl_ex1 change column ex1_addr ex1_address varchar(1024) null;
+alter table tlb_ex1 drop ex1_year;
+```
+
+**Value**
+
+```
+* select : table의 값 확인
+select * from tbl_ex1
+
+* insert : 값 삽입
+insert into dbex.tbl_ex1 values('홍길동', '대구 반월당', '23');
+insert into dbex.tb1_ex1 values(ex1_name, ex1_age) values ('남길동', '23');
+
+* update : 값 수정
+update tbl_ex1 set ex1_age='30';                                      // 모든 ex1_int 값 30로 일괄 변경
+update tbl_ex1 set ex1_addr='경북 구미시' where ex1_name='홍길동';      // ex1_name의 값이 홍길동인 row의 ex1_addr만 경북 구미로 변경
+
+* delete : 값 삭제
+delete from tlb_ex1 where ex1_addr='경북 구미시';                      // ex1_addr=경북 구미시가 포함된 row 값 모두 삭제      
+```
