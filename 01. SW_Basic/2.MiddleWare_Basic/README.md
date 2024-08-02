@@ -1,4 +1,4 @@
-# 2. MiddleWare Basic
+# 2. MiddleWare Basic (8/1 ~ 8/2)
 ```
 * HardWare : PC의 부품    
 * SoftWare
@@ -41,7 +41,7 @@
    8. Ex00 -> src -> webapp -> index.jsp 파일 생성 -> body 변경 -> Runs As (Server)
 
 
-### SQL 환경 설정
+### DBMS 환경 설정
 
 1. MySQL 설치 (community-window version)
    1. MySQL Installer -> MySQL Server 다운로드
