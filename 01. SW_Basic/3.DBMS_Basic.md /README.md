@@ -12,7 +12,7 @@
 * DCL (Date Control Language) : 권한 부여 - Grant, Revoke
 * TCL - Commit, Rollback
 
-**Structure**
+**DDL**
 
 ```
 * cmd 로그인
@@ -47,7 +47,7 @@ alter table tbl_ex1 change column ex1_addr ex1_address varchar(1024) null;
 alter table tlb_ex1 drop ex1_year;
 ```
 
-**Value**
+**DML**
 
 ```
 * select : table의 값 확인
