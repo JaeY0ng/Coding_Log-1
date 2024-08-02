@@ -1,4 +1,4 @@
-# DataBase (8/2 ~
+# 3. DataBase (8/2 ~
 ```
 * Database : 데이터의 저장소
 * Schema : DB의 구조를 전반적으로 기술한 것 - 외부, 내부, 개념
