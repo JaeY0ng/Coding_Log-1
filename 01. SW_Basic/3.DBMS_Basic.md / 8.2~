@@ -1,0 +1,8 @@
+### DataBase
+```
+* Database : 데이터의 저장소
+* Schema : DB의 구조를 전반적으로 기술한 것 - 외부, 내부, 개념
+* DBMS (DataBase Management System) : DB를 관리, 운영하는 소프트웨어 / 대부분 관계형 DBMS 형태  
+* SQL (Structured Query Language) : 관계형 DB에서 사용되는 언어
+* 지식 피라미드 : Data -> Information -> Knownledge -> Wisdom
+```
