@@ -7,8 +7,8 @@
 * 지식 피라미드 : Data -> Information -> Knownledge -> Wisdom
 ```
 ### CRUD
-* DDL (Data Definition Language) : 데이터 정의어 - Create, Alter, Drop, Truncate
-* DML (Date Manipulation Language) : 데이터 조작어 - Select, Insert, Update, Delete
+* DDL (Data Definition Language) : 정의어로 데이터의 구조, 골격 - Create, Alter, Drop, Truncate
+* DML (Date Manipulation Language) : 조작어로 데이터의 값 - Select, Insert, Update, Delete
 * DCL (Date Control Language) : 권한 부여 - Grant, Revoke
 * TCL - Commit, Rollback
 
@@ -42,7 +42,7 @@ drop database dbex1;
 drop table tbl_ex;
 
 * alter : 변경 (add-삽입, change-수정, drop-삭제)
-alter table tbl_ex1 add column ex1_year int null [after ex1_addr];      // [after ex1_name] 삽입할 컬럼 위치
+alter table tbl_ex1 add column ex1_year int null [after ex1_addr];      // [after ex1_name] 삽입할 column 위치
 alter table tbl_ex1 change column ex1_addr ex1_address varchar(1024) null;
 alter table tlb_ex1 drop ex1_year;
 ```
