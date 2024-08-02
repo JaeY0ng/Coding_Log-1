@@ -50,7 +50,7 @@ alter table tlb_ex1 drop ex1_year;
 **DML**
 
 ```
-* select : table의 값 확인
+* select : 값 확인
 select * from tbl_ex1
 
 * insert : 값 삽입
