@@ -6,7 +6,7 @@
 * SQL (Structured Query Language) : 관계형 DB에서 사용되는 언어
 * 지식 피라미드 : Data -> Information -> Knownledge -> Wisdom
 ```
-### CRUD
+#### CRUD
 * DDL (Data Definition Language) : 정의어로 데이터의 구조, 골격 - Create, Alter, Drop, Truncate
 * DML (Date Manipulation Language) : 조작어로 데이터의 값 - Select, Insert, Update, Delete
 * DCL (Date Control Language) : 권한 부여 - Grant, Revoke
