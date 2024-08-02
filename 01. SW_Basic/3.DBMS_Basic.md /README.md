@@ -13,7 +13,7 @@
 * TCL - Commit, Rollback
 
 DDL
------
+----
 ```
 * cmd 로그인
 mysql -u root -p [port ____];    // mysql -user root -password port 8125 [port 번호 변경 시]
@@ -47,8 +47,8 @@ alter table tbl_ex1 change column ex1_addr ex1_address varchar(1024) null;
 alter table tlb_ex1 drop ex1_year;
 ```
 
-**DML**
-
+DML
+---
 ```
 * select : 값 확인
 select * from tbl_ex1
