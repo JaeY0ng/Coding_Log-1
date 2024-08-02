@@ -34,8 +34,8 @@
    3. Tomcat Server 실행 -> 실행 중인 파일 더블 클릭 -> Overview -> Port Number 할당
    4. File -> New -> Dynamic Web Project (Ex00) -> Target Runtime : Apache Tomcat
    5. Ex00 -> src -> webapp -> index.html 파일 생성 -> body 변경 -> Run As (Server)
-   6. Ex00 -> Properties -> Java Built Path -> Tomcat 여부 확인          <br>
-                         -> Facets -> Java 11로 변경, Runteimes Tomcat 선택      <br>        
+   6. Ex00 -> Properties -> Java Built Path -> Tomcat 여부 확인<br>
+                         -> Facets -> Java 11로 변경, Runteimes Tomcat 선택 <br>        
                          -> Server Tomcat 선택               
    7. Ex00 -> src -> webapp -> WEB-INF -> lib -> (Tomcat 설치 경로 -> Tomcat 9.0 -> lib의 jsp, servlet 파일 복사) -> 붙여넣기
    8. Ex00 -> src -> webapp -> index.jsp 파일 생성 -> body 변경 -> Runs As (Server)
