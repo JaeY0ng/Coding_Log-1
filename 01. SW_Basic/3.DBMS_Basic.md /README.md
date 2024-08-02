@@ -12,8 +12,8 @@
 * DCL (Date Control Language) : 권한 부여 - Grant, Revoke
 * TCL - Commit, Rollback
 
-**DDL**
-
+DDL
+-----
 ```
 * cmd 로그인
 mysql -u root -p [port ____];    // mysql -user root -password port 8125 [port 번호 변경 시]
