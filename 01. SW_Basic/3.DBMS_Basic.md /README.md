@@ -58,9 +58,9 @@ insert into dbex.tbl_ex1 values('홍길동', '대구 반월당', '23');
 insert into dbex.tb1_ex1 values(ex1_name, ex1_age) values ('남길동', '23');
 
 * update : 값 수정
-update tbl_ex1 set ex1_age='30';                                   // 모든 ex1_int 값 30로 일괄 변경
-update tbl_ex1 set ex1_addr='경북 구미시' where ex1_name='홍길동'; // ex1_name=홍길동인 row의 ex1_addr만 경북 구미로 변경
+update tbl_ex1 set ex1_age='30';                                    // 모든 ex1_int 값 30로 일괄 변경
+update tbl_ex1 set ex1_addr='경북 구미시' where ex1_name='홍길동';  // ex1_name=홍길동인 row의 ex1_addr만 경북 구미로 변경
 
 * delete : 값 삭제
-delete from tlb_ex1 where ex1_addr='경북 구미시';                  // ex1_addr=경북 구미시가 포함된 row 값 모두 삭제      
+delete from tlb_ex1 where ex1_addr='경북 구미시';                   // ex1_addr=경북 구미시가 포함된 row 값 모두 삭제      
 ```
