@@ -27,7 +27,7 @@ show databases;
 show tables;
 
 * desc : 세부 구조 조회
-desc tbl_example;
+desc tbl_ex1;
 
 * create : 생성
 create database dbex;
