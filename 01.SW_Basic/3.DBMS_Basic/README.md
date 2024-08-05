@@ -88,14 +88,15 @@ revoke all on dbex.* from user1@localhost
 flush privileges
 ```
 <br>
-<br>
+
 **계정 생성**     
-![DCL](https://github.com/user-attachments/assets/b0efee1f-8174-4e36-b3ef-56b83cffedf2)
+![DCL](https://github.com/user-attachments/assets/93c9d39f-d134-41de-a759-1f54c1d42d78)
+
 <br>
-<br> 
+
 **외부 접근**     
-![DCL2](https://github.com/user-attachments/assets/1297773b-0383-4830-b8bf-51942425ff03)
-<br>
+![DCL2](https://github.com/user-attachments/assets/64f21771-d2a2-42b1-879a-326cd3455f0b)
+
 <br>
 
 GUI 운용 실습
