@@ -6,14 +6,13 @@
 * SQL (Structured Query Language) : 관계형 DB에서 사용되는 언어
 * 지식 피라미드 : Data -> Information -> Knownledge -> Wisdom
 ```
-##   CRUD
+### CRUD
 * DDL (Data Definition Language) : 정의어로 데이터의 구조, 골격 - Create, Alter, Drop, Truncate
 * DML (Date Manipulation Language) : 조작어로 데이터의 값 - Select, Insert, Update, Delete
 * DCL (Date Control Language) : 권한 부여 - Grant, Revoke
 * TCL - Commit, Rollback
 
-###DDL
-----
+### DDL
 ```
 * cmd 로그인
 mysql -u root -p [-port ____];    // mysql -user root -password port 8125 [port 번호 변경 시]
@@ -47,8 +46,8 @@ alter table tbl_ex1 change column ex1_addr ex1_address varchar(1024) null;
 alter table tlb_ex1 drop ex1_year;
 ```
 
-###DML
----
+### DML
+
 ```
 * select : 값 확인
 select * from tbl_ex1
