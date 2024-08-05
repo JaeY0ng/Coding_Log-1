@@ -47,10 +47,9 @@ alter table tlb_ex1 drop ex1_year;
 ```
 
 ### DML
-
 ```
 * select : 값 확인
-select * from tbl_ex1
+select * from tbl_ex1    // * : 모든 열
 
 * insert : 값 삽입
 insert into dbex.tbl_ex1 values('홍길동', '대구 반월당', '23');
@@ -62,4 +61,29 @@ update tbl_ex1 set ex1_addr='경북 구미시' where ex1_name='홍길동';  // e
 
 * delete : 값 삭제
 delete from tlb_ex1 where ex1_addr='경북 구미시';                   // ex1_addr=경북 구미시가 포함된 row 값 모두 삭제      
+```
+
+### DCL
+```
+* grant : 계정 추가
+create user user1@localhost [identified by port]    // 로컬 계정
+create user user2@'%'                               // 외부 접근 계정
+
+* drop, delete : 계정 삭제
+drop user user1@localhost
+ddelete from user where user='user2'
+
+* grant : 권한 부여
+grant * on dbex.* to user1@localhost    // dbex의 모든 테이블에 대한 모든 권한 부여
+grant select, insert on dbex.* to user2@'%' // dbex의 모든 테이블에 대한 select, insert 권한 부여
+
+* show : 권한 확인
+show grants for user1@localhost
+show grants for user2@'%'
+
+* revoke : 권한 제거
+revoke all on dbex.* from user1@localhost
+
+* flush : 권한 새로고침
+flush privileges
 ```
