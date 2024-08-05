@@ -11,7 +11,7 @@
 * DML (Date Manipulation Language) : 조작어로 데이터의 값 - Select, Insert, Update, Delete
 * DCL (Date Control Language) : 권한 부여 - Grant, Revoke
 * TCL - Commit, Rollback
-
+  
 ### DDL
 ```
 * cmd 로그인
