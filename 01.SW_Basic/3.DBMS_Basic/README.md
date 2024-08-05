@@ -66,16 +66,16 @@ delete from tlb_ex1 where ex1_addr='경북 구미시';                   // ex1_
 ### DCL
 ```
 * grant : 계정 추가
-create user user1@localhost [identified by port]    // 로컬 계정
-create user user2@'%'                               // 외부 접근 계정
+create user user1@localhost [identified by port ____]    // 로컬 계정
+create user user2@'%'                                    // 외부 접근 계정
 
 * drop, delete : 계정 삭제
 drop user user1@localhost
 ddelete from user where user='user2'
 
 * grant : 권한 부여
-grant * on dbex.* to user1@localhost               // dbex의 모든 테이블에 대한 모든 권한 부여
-grant select, insert on dbex.* to user2@'%'        // dbex의 모든 테이블에 대한 select, insert 권한 부여
+grant * on dbex.* to user1@localhost                 // dbex의 모든 테이블에 대한 모든 권한 부여
+grant select, insert on dbex.tlb_ex1 to user2@'%'    // dbex의 tbl_ex1에 대한 select, insert 권한 부여
 
 * show : 권한 확인
 show grants for user1@localhost
