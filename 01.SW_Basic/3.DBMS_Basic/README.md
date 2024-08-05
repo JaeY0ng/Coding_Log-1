@@ -86,14 +86,17 @@ revoke all on dbex.* from user1@localhost
 
 * flush : 권한 새로고침
 flush privileges
-
 ```
-**계정 생성**
+<br>
+<br>
+**계정 생성**     
 ![DCL](https://github.com/user-attachments/assets/b0efee1f-8174-4e36-b3ef-56b83cffedf2)
 <br>
-**외부 접근**
+<br> 
+**외부 접근**     
 ![DCL2](https://github.com/user-attachments/assets/1297773b-0383-4830-b8bf-51942425ff03)
-
+<br>
+<br>
 
 GUI 운용 실습
 -------------
@@ -102,7 +105,7 @@ GUI 운용 실습
   2. 추성적 개념으로 표현하며 E-R 다이어그램 (Craw's Foot) 작성
      * 1:1 관계
      * 1:N 관계
-     * N:M 관계 
+     * N:M 관계 : 중간 테이블이 존재 (중간 다리)
   3. 테이블 설계, 정규화로 논리적 자료로 변환
   4. 물리적 데이터로 변환
   5. 실제 파일 제작
