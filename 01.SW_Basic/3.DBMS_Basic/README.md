@@ -15,7 +15,7 @@
 ### DDL
 ```
 * cmd 로그인
-mysql -u root -p [-port ____];    // mysql -user root -password port 8125 [port 번호 변경 시]
+mysql -u root -p [-port ____];    // mysql -user 계정 -password -port 8125 [port 번호 변경 시]
 
 * use : DB 위치 지정
 use mysql;
