@@ -118,9 +118,15 @@ GUI 운용 실습
   4. 물리적 데이터로 변환
   5. 실제 파일 제작
 
-**Draw.io 실습 -> mySQL**
+#### E-R Diagram
+**Drawio**
+
+**mySQL**
 1. File -> New model -> Add Diagra
- * 자식 선택 -> 부모 선택 -> 외래키 자동 추가
- * 실선 : 외래키 PK
+  * 자식 선택 -> 부모 선택 -> 외래키 자동 추가
+  * 실선 : 외래키 PK
 2. Diagram -> Database -> Forward Engineer
-3. Table -> Database -> Reverse Engineer 
+3. Table -> Database -> Reverse Engineer
+
+![eer](https://github.com/user-attachments/assets/652d9875-0d77-40b4-9a9b-9153480e8125)
+
