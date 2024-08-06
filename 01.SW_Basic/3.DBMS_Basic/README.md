@@ -1,11 +1,18 @@
-# 3. DataBase (8/2 ~ 8/5)
+# 3. DataBase (8/2 ~ 8/6)
 ```
-* Database : 데이터의 저장소
+* Database : 데이터의 집합
 * Schema : DB의 구조를 전반적으로 기술한 것 - 외부, 내부, 개념
-* DBMS (DataBase Management System) : DB를 관리, 운영하는 소프트웨어 / 대부분 관계형 DBMS 형태  
-* SQL (Structured Query Language) : 관계형 DB에서 사용되는 언어
+* SQL (Structured Query Language) : ANSI, ISO, IEC가 정의한 DB 조작을 위한 구조화된 질의어
 * 지식 피라미드 : Data -> Information -> Knownledge -> Wisdom
 ```
+**DBMS (DataBase Management System) : DB를 관리, 운영하는 소프트웨어**
+ * 동시 제어, 회복 관리, 성능 관리, 보안 관리
+ * 계층형 : 종속 관계의 계층화 구조 (대부분의 DBMS)
+ * 망형 : 망형 네트워크 구조
+ * 관계형 : 레코드의 집합을 테이블로 구성한 관계 구조
+ * 객체지향형 : 데이터 객체화 (객체 재사용, 캡슐화, 상속)
+ * 객체관계형 : 관계형 + 객체지향형
+    
 ### CRUD
 * DDL (Data Definition Language) : 정의어로 데이터의 구조, 골격 - Create, Alter, Drop, Truncate
 * DML (Date Manipulation Language) : 조작어로 데이터의 값 - Select, Insert, Update, Delete
@@ -111,11 +118,9 @@ GUI 운용 실습
   4. 물리적 데이터로 변환
   5. 실제 파일 제작
 
-**Draw.io 실습**
-mySQL
+**Draw.io 실습 -> mySQL**
 1. File -> New model -> Add Diagra
-   -자식 선택 -> 부모 선택 -> 외래키 자동 추가
-실선 : 외래키 PK
-
-   시험 : diagram에서 -> Database -> Forward Engineer
-   반대 : Table선택 -> Database -> Rever Engineer
+ * 자식 선택 -> 부모 선택 -> 외래키 자동 추가
+ * 실선 : 외래키 PK
+2. Diagram -> Database -> Forward Engineer
+3. Table -> Database -> Reverse Engineer 
