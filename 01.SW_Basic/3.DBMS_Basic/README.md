@@ -104,9 +104,18 @@ GUI 운용 실습
 **DB 설계 순서 : 요구 분석 -> 개념적 설계 -> 논리적 설계 -> 물리적 설계 -> 구현**
   1. 사용자, 목적, 사용 범위, 제약 조건을 정리
   2. 추성적 개념으로 표현하며 E-R 다이어그램 (Chen model, Craw's Foot) 작성
-     * 1:1 관계
-     * 1:N 관계
-     * N:M 관계
+     * 1:1 관계 (테이블 선택적)
+     * 1:N 관계 (테이블 선택적)
+     * N:M 관계 (테이블 필수)
   3. 테이블 설계, 정규화로 논리적 자료로 변환
   4. 물리적 데이터로 변환
   5. 실제 파일 제작
+
+**Draw.io 실습**
+mySQL
+1. File -> New model -> Add Diagra
+   -자식 선택 -> 부모 선택 -> 외래키 자동 추가
+실선 : 외래키 PK
+
+   시험 : diagram에서 -> Database -> Forward Engineer
+   반대 : Table선택 -> Database -> Rever Engineer
