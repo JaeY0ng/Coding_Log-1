@@ -3,7 +3,7 @@
 * Database : 데이터의 집합
 * Schema : DB의 구조를 전반적으로 기술한 것 - 외부, 내부, 개념
 * SQL (Structured Query Language) : ANSI, ISO, IEC가 정의한 DB 조작을 위한 구조화된 질의어
-* 지식 피라미드 : Data -> Information -> Knownledge -> Wisdom
+* 지식 피라미드 : Data -> Information -> Knownledge -> Wisdom                  
 ```
 **DBMS (DataBase Management System) : DB를 관리, 운영하는 소프트웨어**
  * 동시 제어, 회복 관리, 성능 관리, 보안 관리
