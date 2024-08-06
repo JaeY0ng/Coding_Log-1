@@ -1,6 +1,6 @@
 # 2. MiddleWare Basic (8/1 ~ 8/2)
 ```
-* HardWare : PC의 부품    
+* HardWare : PC의 부품                                  
 * SoftWare
  1. System Software : WindowOS, Linux, macOS
  2. Application
