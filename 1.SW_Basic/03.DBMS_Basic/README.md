@@ -118,10 +118,12 @@ GUI 운용 실습
   4. 물리적 데이터로 변환
   5. 실제 파일 제작
 
-#### E-R Diagram
-**Drawio**
+### E-R Diagram
+* Draw.io
+  
+![draw](https://github.com/user-attachments/assets/67b54ea7-1596-44fe-9356-d4fc1b34f6a0)
 
-**mySQL**
+* mySQL
 1. File -> New model -> Add Diagra
   * 자식 선택 -> 부모 선택 -> 외래키 자동 추가
   * 실선 : 외래키 PK
