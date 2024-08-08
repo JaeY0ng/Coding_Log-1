@@ -38,14 +38,12 @@ mkdir /home/ex2/C  // home -> ex2에 폴더C 생성
 mkdir A B C        // 현재 폴더에 폴더A, B, C 생성
 mkdir /ex1/A/B     // ex1에 폴더A 생성 안에 폴더B 생성
 
-
 * touch : 파일 생성, 생성 시점 변경
 [d : 시간 변경, -t : 시각 변경]
 touch 1 2                  // 현재 폴더에 파일1, 2 생성
 touch /home/ex2/C/1        // home -> ex2 -> C에 파일1 생성
 touch -d 12:12 ex1/A/2    // 현재 폴더 -> ex1 -> A -> 파일2의 시간 12:12로 변경
 touch -t 202408070523 1    // 현재 폴더의 파일1의 시각 2024년08월07일05시23분00초로 변경
-
 
 * cp (copy) : 복사
 [r : 강제, 폴더, p : 보존]
@@ -91,37 +89,42 @@ ls -l cat > ex1
 cat >> ex2 - Example
 cat c
 tail -3 c >> ex3
+```
 
 * | (pipeline) : 왼쪽 명령의 결과를 오른쪽 명령어에 적용
 ls -al ex | cat -10
 
+### 권한
+* 소유권 : 파일, 폴더를 소유할 사용자 권한
+* 허가권 (permission) : 파일에 접근할 권한
+* r : Read = 4
+* w : Write = 2
+* x : eXcute = 1
+*  **drwx-rw---x -> d/rwx/rw-/--x**
+  1. d : 파일의 타입 (d = directory)
+  2. rwx : 소유자
+  3.  rw- : 소유 그룹
+  4.  --x : 게스트 사용자 (other)
 
+```
+* useradd : 사용자 추가
+useradd user1 : user1 추가
+passwd user1 : user1 비밀번호 설정
 
+* chown : 소유권 변경 = 사용자에게 권한 부여
+chown user1:user1 /ex    // 소유자, 소유그룹변경
+chown .root /ex          // 소유그룹변경
+chown -R user1.user1 /ex // 하위파일, 폴더 포함 변경
 
+* chmod-numeric : 숫자로 허가권 변경
+[rwx의 숫자를 더 해서 표현]
+chmod 755 ex    // 4+2+1, 4+1, 4+1 = rwx, rx-, r-x
+chmod 421 ex    // 4, 2, 1 = r--, -w-, --x
+chmod 376 ex    // 2+1, 4+2+1, 4+2 = -wx, rwx, rw-
 
-
-
-권한 : 권력 한계 = 소유권 (허가권을 부여할 수 있는 권한) + 허가권
-                  계정                                 자원에 대한 접근 제한
-es
-리눅스 소유권  root                 root
-drwxr-xr-x  5 root                 root                  4096 Apr 24 19:48 vulkan
-rwxr-xr-x 허가권
-Read      읽기 = 4
-Write      쓰기   = 2
-eXcute      실행 = 1
-___/___/___
-소유자, 그룹, 나머지
-권한 정리
-문서 : r = 문서 내용 보기 -> cat, head, tail, more / w = 수정, 쓰기 vi / x = ./파일명 -> 실행 파일
-디렉토리 : r = 목록 보기 ls / w = 폴더 내에서 생성, 수정, 삭제 -> cp, touch, mv, > / x = 폴더 내로의 진입 권한 -> cd 
-
-
-시험문제
-useradd user10
-passwd user10 -> pswd--
-3. /perm 디렉토리에 user10 은 접근가능,목록보기가능,파일생성불가 허가권부여
-
-4. /perm 디렉토리에 user20 은 접근가능,목록보기불가,파일생성가능 허가권부여
-
-5. /perm 디렉토리에 user30 은 접근불가,목록보기불가,파일생성불가 허가권부여
+* chmod-symbolic : 문자로 허가권 변경
+[u : 소유권자, g : 소유그룹, g : other, a : 모두, +- : 허가, 불허]
+chmod u-rw ex
+chmod g+w ex
+chmod a-x, u+r ex
+```
