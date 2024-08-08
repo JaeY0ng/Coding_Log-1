@@ -38,16 +38,16 @@
    2. Login : admin / 1234
    3. 마지막 체크 박스 : Run Apache Tomcat, Show readme 해제
 5. Eclipse 설치 (Java and Web Developers package)
-   1. Preferences -> Workspace, CSS files, HTML files, JSP files Encoding == UTF-8 (유니코드) 확인
-   2. File -> New -> Other -> Server -> Tomcat -> 하단 Server에서 Run
-   3. Tomcat Server 실행 -> 실행 중인 파일 더블 클릭 -> Overview -> Port Number 할당
-   4. File -> New -> Dynamic Web Project (Ex00) -> Target Runtime : Apache Tomcat
-   5. Ex00 -> src -> webapp -> index.html 파일 생성 -> body 변경 -> Run As (Server)
-   6. Ex00 -> Properties -> Java Built Path -> Tomcat 여부 확인
+   1. Window -> Preferences -> Workspace, CSS files, HTML files, JSP files Encoding == UTF-8 (유니코드) 확인
+   2. File -> New -> Other -> Server -> Tomcat
+   3. 하단 Servers에서 Tomcat Server -> 실행 중인 파일 더블 클릭 -> Overview -> Port Number (8081) 할당
+   4. File -> New -> Dynamic Web Project (Ex00) -> Target Runtime = Tomcat v9.0
+   5. Ex00 -> src -> webapp -> HTML File 파일 생성 -> body 변경 -> Run As (Run on Server)
+   6. Ex00 -> Properties -> Java Built Path -> Server Runtime [Tomcat v9.0] 여부 확인
                          -> Facets -> Java 11로 변경, Runteimes Tomcat 선택      
                          -> Server Tomcat 선택               
    7. Ex00 -> src -> webapp -> WEB-INF -> lib -> (Tomcat 설치 경로 -> Tomcat 9.0 -> lib의 jsp, servlet 파일 복사) -> 붙여넣기
-   8. Ex00 -> src -> webapp -> index.jsp 파일 생성 -> body 변경 -> Runs As (Server)
+   8. Ex00 -> src -> webapp -> JSP File 생성 -> body 변경 -> Runs As (Run on Server)
 
 
 ### DBMS 환경 설정
