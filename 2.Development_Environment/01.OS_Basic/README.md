@@ -3,15 +3,16 @@
 * 커널 : 하드웨어와 소프트웨어의 통신 관리 시스템으로 리눅스의 핵심
 **환경 설정**
    * Visual Box (version 7) 설치
-     1. 어댑터에서 VMware 모두 끄기
-     1. 파일 -> 도구 -> 네트워크 관리자 -> adapter2 추가 (IP 할당)
-     2. 정처산기 LINUX 실행
+    1. 어댑터에서 VMware 모두 끄기
+    2. 파일 -> 도구 -> 네트워크 관리자 -> adapter2 추가 (IP 할당)
+    3. 정처산기 LINUX 실행
    * Ubuntu 설치
    * Putty 설치
 
 ### Linux 명령어
 ```
-[디렉토리 => 폴더]
+[디렉토리 = 폴더]
+
 * sudo : 관리자 계정 로그인
 user1      // 일반 계정 로그인
 sudo su    // 관리자 계정 로그인
@@ -90,10 +91,6 @@ cat >> ex2 - Example
 cat c
 tail -3 c >> ex3
 ```
-
-* | (pipeline) : 왼쪽 명령의 결과를 오른쪽 명령어에 적용
-ls -al ex | cat -10
-
 ### 권한
 * 소유권 : 파일, 폴더를 소유할 사용자 권한
 * 허가권 (permission) : 파일에 접근할 권한
@@ -101,10 +98,10 @@ ls -al ex | cat -10
 * w : Write = 2
 * x : eXcute = 1
 *  **drwx-rw---x -> d/rwx/rw-/--x**
-  1. d : 파일의 타입 (d = directory)
-  2. rwx : 소유자
-  3.  rw- : 소유 그룹
-  4.  --x : 게스트 사용자 (other)
+   1. d : 파일의 타입 (d = directory)
+   2. rwx : 소유자
+   3.  rw- : 소유 그룹
+   4.  --x : 게스트 사용자 (other)
 
 ```
 * useradd : 사용자 추가
