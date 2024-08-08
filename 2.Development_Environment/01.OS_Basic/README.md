@@ -1,6 +1,7 @@
 ### 01.OS_System
 * OS (Operation System) : 하드웨어와 소프트웨어 사이의 인터페이스 운영 체제
 * 커널 : 하드웨어와 소프트웨어의 통신 관리 시스템으로 리눅스의 핵심
+  
 **환경 설정**
    * Visual Box (version 7) 설치
     1. 어댑터에서 VMware 모두 끄기
