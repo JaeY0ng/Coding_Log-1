@@ -1,7 +1,16 @@
-Git : 분산형 버전 관리 시스템의 일종 (file1.v1, file1.v2, file1.v3, ...)
+### Git
+**Git : 분산형 버전 관리 시스템의 일종 (file1.v1, file1.v2, file1.v3, ...)**
+* Working Directory : PC 내에 Git 정보가 저장되는 작업 폴더
+* Staging Area : 임시 저장 공간 (commment를 추가해 Local로 전달 ->Head 이동)
+* Local Repository : 최종 저장 공간 comment를 통해 파일을 구분하여 저장
+* Remote Repository : 원격 저장 공간
+* branch : 독립 작업을 위한 Repository 내에 파생된 저장 공간 (서로 병합 가능)
+* Head : 작업 중인 부분
+* 작업 폴더 -> Staging Area -> Local Repository <=> Remote Repository
 
+```
 
-
+```
 git hub
 git download
 원한는 workingdirectory 생성
