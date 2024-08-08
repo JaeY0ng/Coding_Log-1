@@ -14,4 +14,9 @@ git reset : 커밋 취소
 -mixed : 커밋 취소, staging 취소, local 변경 상태로 유지 (add 전 단계로) -> add, commit 필요 (Staging area까지 초기화)
 =staging area 삭제. add, commit 필요
 -hard : commit 취소 staging 취소 , local 변경 초기화, 해당 시점으로 완전 롤백 -> 파일도 삭제됨 -> file, add, commit 필요
-=파일 삭제. file 제작, add, commit 필요
+=파일 삭제. file 제작, add, commit 필요하다
+
+(soft : 커서 이동 -> commit : enter로 작성 완료 필요)
+
+git reflog : reset 한거 복원
+
