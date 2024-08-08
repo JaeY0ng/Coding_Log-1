@@ -1,4 +1,5 @@
   cp 시험문제
+  ```
   문제2. 5중3개
   1.
   ls -l /etc/login.defs /etc/passwd /boot/grub/grub.cfg
@@ -22,6 +23,7 @@
   cat 시험문제
   head&tail 시험문제
   more
+```
 시험 표준 출력redirection
 
 Virtual Box
