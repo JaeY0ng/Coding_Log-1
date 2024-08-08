@@ -103,7 +103,7 @@ tail -3 c >> ex3
    2. rwx : 소유자
    3.  rw- : 소유 그룹
    4.  --x : 게스트 사용자 (other)
-
+   5. ls -l로 권한 확인 가능
 ```
 * useradd : 사용자 추가
 useradd user1 : user1 추가
