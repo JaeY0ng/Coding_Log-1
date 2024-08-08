@@ -3,12 +3,12 @@
 * 커널 : 하드웨어와 소프트웨어의 통신 관리 시스템으로 리눅스의 핵심
   
 **환경 설정**
-   * Visual Box (version 7) 설치
-    1. 어댑터에서 VMware 모두 끄기
-    2. 파일 -> 도구 -> 네트워크 관리자 -> adapter2 추가 (IP 할당)
-    3. 정처산기 LINUX 실행
-   * Ubuntu 설치
-   * Putty 설치
+* Visual Box (version 7) 설치
+  1. 어댑터에서 VMware 모두 끄기
+  2. 파일 -> 도구 -> 네트워크 관리자 -> adapter2 추가 (IP 할당)
+ 3. 정처산기 LINUX 실행
+* Ubuntu 설치
+* Putty 설치
 
 ### Linux 명령어
 ```
