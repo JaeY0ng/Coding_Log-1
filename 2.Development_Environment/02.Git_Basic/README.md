@@ -1,4 +1,4 @@
-### Git
+## Git
 **Git : 분산형 버전 관리 시스템의 일종 (file1.v1, file1.v2, file1.v3, ...)**
 * Working Directory : PC 내에 Git 정보가 저장되는 작업 폴더
 * Staging Area : 임시 저장 공간 (commment를 추가해 Local로 전달 ->Head 이동)
@@ -9,7 +9,28 @@
 * 작업 폴더 -> Staging Area -> Local Repository <=> Remote Repository
 
 ```
+* cmd : working directory의 경로 창에서 cmd로 실행
+cmd
 
+* init : git 기초 파일 생성
+git init    //workingdirectory 내 숨김폴더 생성
+
+* status : WorkingDirectory 내에 존재하지만, StagingArea에 없는 폴더 확인
+git status
+
+* add : WorkingDirectory의 파일 StagingArea에 추가
+git add ex1
+
+* commit : comment를 추가하여 LocalRepository로 이동
+git commit -m v0.0 ex1    // -m : messagy
+
+* log : LocalRepository의 파일+comment 확인
+git log                 // 파일 상세 정보 확인
+git log --oneline       // 파일명 + comment + 파일 번호 확인
+
+* reset : LocalRepository의 파일 번호로 WorkingDirectory Rollback
+[soft : 헤드만 이동]
+git reset --soft b45aeq   // 해당 파일부터 그 후 파일까지 commit만 추가 필요
 ```
 git hub
 git download
