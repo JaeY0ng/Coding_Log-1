@@ -55,7 +55,9 @@ git merge ex            // 병합 받을 branch명
 
 * merge --abort : 강제 merge
 ```
-### Git hub
+
+###Git hub
+----------
 * Git hub - Local Repository
   1. git hub -> New Repositories (Read me X, Public)
   2. WorkingDirectory 생성
@@ -67,7 +69,6 @@ git merge ex            // 병합 받을 branch명
   8. git remote -v    // 연동된 원격저장소 확인
   9. git remote add origin HTTPS.URL    // 연결 추가 orign[이름] 경로
   
-
 * Git hub - Eclipse
   1. Eclise
   2. File -> New -> Dyanamic Web Project (Test)
