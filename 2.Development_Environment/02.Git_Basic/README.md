@@ -1,4 +1,4 @@
-## GIT (8/8 ~
+# GIT (8/8 ~ 8/9)
 **Git : 분산형 버전 관리 시스템의 일종 (file1.v1, file1.v2, file1.v3, ...)**
 * Working Directory : PC 내에 Git 정보가 저장되는 작업 폴더
 * Staging Area : 임시 저장 공간 (commment를 추가해 Local로 전달 ->Head 이동)
@@ -56,7 +56,7 @@ git merge ex            // 병합 받을 branch명
 * merge --abort : 강제 merge
 ```
 
-## Git hub
+Git hub
 ----------
 * Git hub - Local Repository
   1. git hub -> New Repositories (Read me X, Public)
