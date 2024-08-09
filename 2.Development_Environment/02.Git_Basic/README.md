@@ -56,7 +56,7 @@ git merge ex            // 병합 받을 branch명
 * merge --abort : 강제 merge
 ```
 
-###Git hub
+### Git hub
 ----------
 * Git hub - Local Repository
   1. git hub -> New Repositories (Read me X, Public)
