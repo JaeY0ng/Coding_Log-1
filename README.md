@@ -7,4 +7,4 @@
 
 **02.Development_Environment (개발자 환경 구축)**            
 [OS_Basic](2.Development_Environment/01.OS_Basic/README.md)  
-[OS_Basic](2.Development_Environment/02.Git_Basic/README.md)  
+[Git_Basic](2.Development_Environment/02.Git_Basic/README.md)  
