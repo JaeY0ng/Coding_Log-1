@@ -1,4 +1,4 @@
-
+## GIT (8/8 ~
 **Git : 분산형 버전 관리 시스템의 일종 (file1.v1, file1.v2, file1.v3, ...)**
 * Working Directory : PC 내에 Git 정보가 저장되는 작업 폴더
 * Staging Area : 임시 저장 공간 (commment를 추가해 Local로 전달 ->Head 이동)
@@ -54,45 +54,40 @@ git merge ex            // 병합 받을 branch명
  6. 다른 branch에서도 git merge master
 
 * merge --abort : 강제 merge
-
+```
 ### Git hub
-* cmd 창 이용 
-  1. WorkingDirectory 생성
-  2. Directory 내 파일 하나 생성
-  3. Directory 경로에서 cmd 실행
+* Git hub - Local Repository
+  1. git hub -> New Repositories (Read me X, Public)
+  2. WorkingDirectory 생성
+  3. Directory 내 파일 하나 생성
+  4. Directory 경로에서 cmd 실행
+  5. git init
+  6. git add *
+  7. git commit -m [message]
+  8. git remote -v    // 연동된 원격저장소 확인
+  9. git remote add origin HTTPS.URL    // 연결 추가 orign[이름] 경로
   
 
+* Git hub - Eclipse
+  1. Eclise
+  2. File -> New -> Dyanamic Web Project (Test)
+  3. Test -> Team -> Share Project... -> 상단 Use or create 체크 -> Project 체크 -> Finish
+  4. Git Repositories -> Test -> Remotes -> Create Remote -> Change -> Git hub HTTPS URL, Git hub ID, Token (passwd) 입력
+     
+```
+* push : 원격저장소에 저장
+git push origin
 
-git hub 연동
-작업 폴더에 txt 파일 생성
-git hub -> new repositories (readme 없이, public)
-main에 있는 그대로 cmd에 입력 (https version)
-입력 후 cmd에 뜬 upstream 문구 입력
--> git hub 로그인 창 생성됨
--> 새로고침
--> cmd 작업 후 git push origin (올리기)
--> git hub 작업 후 git pull origin
+* pull : 원격저장소의 정보 불러오기
+git pull origin
 
-git init
-git add
-git branch -M main    // 기본 master branch -> main branch로 이름 변경
-git commit -m message
-git remote -v    // 확인
-git remote add  origin HTML.URL// 원격 저장소 추가 이름 보통 origin
-or
+* ps -e : 핑 확인
+ps -elf
 
+* kill : 연결된 IP 강제 종료
+kill eqd12r
 
-new repositories (readme랑 같이)
--> https 링크 복사
--> 작업 폴더 가서 cmd
--> git clone https://github.com/100chun/git_test2.git
--> cmd 작업 후 git push origin
--> git hub 작업 후 git pull origin
-git fetch origin ?
-
-시험문제 
-* ps -e : ping 확인
-  ps -elf : 자세히 확인
-* kill : 강제로 종료시킴
-* PRI : 우선순위 (낮을 수록 높음, 기본 80 +- NI = PRI)
-  nice -n -10 ping 127.0.0.1
+* nice : 연결 우선 순위 (PRI) 변경
+[기본 80 +- = PRI : 낮을 수록 높음]
+nice -n -10 ping 127.0.0.1
+```
