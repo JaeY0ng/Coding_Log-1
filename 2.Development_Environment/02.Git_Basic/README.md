@@ -1,4 +1,4 @@
-# GIT (8/8 ~ 8/9)
+# Git (8/8 ~ 8/9)
 **Git : 분산형 버전 관리 시스템의 일종 (file1.v1, file1.v2, file1.v3, ...)**
 * Working Directory : PC 내에 Git 정보가 저장되는 작업 폴더
 * Staging Area : 임시 저장 공간 (commment를 추가해 Local로 전달 ->Head 이동)
@@ -69,11 +69,16 @@ Git hub
   8. git remote -v    // 연동된 원격저장소 확인
   9. git remote add origin HTTPS.URL    // 연결 추가 orign[이름] 경로
   
-* Git hub - Eclipse
+* Eclipse -> Git
   1. Eclise
   2. File -> New -> Dyanamic Web Project (Test)
   3. Test -> Team -> Share Project... -> 상단 Use or create 체크 -> Project 체크 -> Finish
   4. Git Repositories -> Test -> Remotes -> Create Remote -> Change -> Git hub HTTPS URL, Git hub ID, Token (passwd) 입력
+ 
+* Git -> Eclipse
+  1. Git HTTPS.URL 복사
+  2. Eclipe -> File -> New -> Other -> Git Repository -> Repository Directory = Workspace 내부
+  3. 
      
 ```
 * push : 원격저장소에 저장
