@@ -6,7 +6,7 @@
 * Remote Repository : 원격 저장 공간
 * branch : 독립 작업을 위한 Repository 내에 파생된 저장 공간 (서로 병합 가능)
 * Head : 작업 중인 부분
-* 작업 폴더 -> Staging Area -> Local Repository <=> Remote Repository
+* 작업 폴더 -> Staging Area -> Local Repository <=> Remote Repository  
 
 ```
 * cmd : working directory의 경로 창에서 cmd로 실행
