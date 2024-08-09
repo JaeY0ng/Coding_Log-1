@@ -92,7 +92,8 @@ cat >> ex2 - Example
 cat c
 tail -3 c >> ex3
 ```
-### 권한
+## 권한
+--------
 * 소유권 : 파일, 폴더를 소유할 사용자 권한
 * 허가권 (permission) : 파일에 접근할 권한
 * r : Read = 4
