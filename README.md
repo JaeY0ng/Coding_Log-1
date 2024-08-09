@@ -5,5 +5,6 @@
 [MiddleWare_Basic](1.SW_Basic/02.MiddleWare_Basic/README.md)           
 [DBMS_Basic](1.SW_Basic/03.DBMS_Basic/README.md)
 
-**02.Development_Environment (개발자 환경 구축)**
+**02.Development_Environment (개발자 환경 구축)**            
 [OS_Basic](2.Development_Environment/01.OS_Basic/README.md)  
+[OS_Basic](2.Development_Environment/02.Git_Basic/README.md)  
