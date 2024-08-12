@@ -79,7 +79,7 @@ Git hub
   5. Git hub -> 계정 Settings -> Developer Settings -> Personal access tokens (classic) -> repo 체크 -> Token (password) 발급
   6. Git Repositories -> 좌측 Test 옆 화살표-> Remotes -> Create Remote -> Change -> Git hub HTTPS URL, Git hub ID, token (Password) 입력 -> Save and Push
   7. Push : Test -> Team -> Commit -> Add -> Commit Message -> Commit and Push
-  
+  ///// push 가능 but pull 불가능 아마도 원격저장소와 eclipse 저장 공간의 차이로 발생? elcipse 후 원격 저장소 연결 시도
 ```
 * push : 원격저장소에 저장
 git push origin
