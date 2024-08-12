@@ -97,8 +97,8 @@ IP : 10.5.4.9
 * 정적 : 관리자가 직접 경로 설정 <br>
   -Static : 설정한 진행 방향 (목표 노드 / 서브넷 마스크 / 진행 방향 라우터 IP) <br>
   -Defualt : 모든 진행 방향 = 진행 방향이 하나인 말단 라우터 (0.0.0.0 / 0.0.0.0 진행 방향 라우터 IP) <br>
-  
-  ![353714928-16ab3bfb-05b7-419b-8eba-025ca8720f0c](https://github.com/user-attachments/assets/e102a9fa-9663-48da-b2d5-5b5fbc770cc9)
+
+ ![static](https://github.com/user-attachments/assets/68447ee1-a21e-4e0e-828d-a919dec4f3fc)
  
 * 동적 : 전체 경로 학습 -> 자동 최적 경로 계산 (네트워크 변화에 민감) <br>
  -AS (Autonomous System) : 자치 시스템 = 관리자가 관리하는 라우터의 집합
@@ -107,7 +107,7 @@ IP : 10.5.4.9
       -Link-State : 수렴 시간 빠름, EIGRP OSPF
    2. EGP (Exterior Gateway Protocol) -> BGP
       
-![RIP](https://github.com/user-attachments/assets/62be8f63-f5b8-414a-bdd1-45a227ab89b0)
+![rip](https://github.com/user-attachments/assets/f9522f45-c0eb-4861-be16-697edbb53a98)
 
  <br>
  
@@ -118,4 +118,4 @@ IP : 10.5.4.9
  2. 사이트 Server에 IP 입력 (IP 칸 DNS Server 미입력)
  3. PC IP칸에 DSN Server 입력 -> Web Browser에 검색으로 확인 가능
 
-![DNS](https://github.com/user-attachments/assets/330b16eb-09cd-4ea9-b4fc-8c85cbcf677f)
+![dns](https://github.com/user-attachments/assets/6f60bda0-5e5e-4aaa-af48-eae48c20bb4e)
