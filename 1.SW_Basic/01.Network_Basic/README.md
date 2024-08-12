@@ -95,7 +95,7 @@ IP : 10.5.4.9
  
 **Routing Protocol : 경로 탐색 (Router 간의 통신)**
 * 정적 : 관리자가 직접 경로 설정 <br>
-  -Static : 설정한 진행 방향 (목표 노드 / 서브넷 마스크 / 진행 방향 라우터 IP) <br>
+  -Static : 설정한 진행 방향 (목표 PC의 노드 / 서브넷 마스크 / 진입 라우터 IP) <br>
   -Defualt : 모든 진행 방향 = 진행 방향이 하나인 말단 라우터 (0.0.0.0 / 0.0.0.0 진행 방향 라우터 IP) <br>
 
  ![static](https://github.com/user-attachments/assets/68447ee1-a21e-4e0e-828d-a919dec4f3fc)
@@ -103,9 +103,10 @@ IP : 10.5.4.9
 * 동적 : 전체 경로 학습 -> 자동 최적 경로 계산 (네트워크 변화에 민감) <br>
  -AS (Autonomous System) : 자치 시스템 = 관리자가 관리하는 라우터의 집합
    1. IGP (Interior Gateway Protocol)
-      -RIP : Distance Vector - Hop이 가장 적은 경로 / Max = 15 -> 대규모 사용 불가,    
+      -RIP : Distance Vector - Hop이 가장 적은 경로 / Max = 15 -> 대규모 사용 불가,
+        * 연결 노드 모두 입력  
       -Link-State : 수렴 시간 빠름, EIGRP OSPF
-   2. EGP (Exterior Gateway Protocol) -> BGP
+   3. EGP (Exterior Gateway Protocol) -> BGP
       
 ![rip](https://github.com/user-attachments/assets/f9522f45-c0eb-4861-be16-697edbb53a98)
 
@@ -115,7 +116,8 @@ IP : 10.5.4.9
 * DNS (Domain Name Service) : 문자 주소 + IP (숫자 주소) = www.naver.com + 223.130.200.236
 * Web Service : 하이퍼텍스트 형식의 문서파일 제공 (Hyper Text Markup Language, Hyper Text Transfer Protocol)
  1. DNS server의 Services DNS에 웹사이트 문자 주소와 IP 추가 (IP칸 DNS Server 미입력)
- 2. 사이트 Server에 IP 입력 (IP 칸 DNS Server 미입력)
- 3. PC IP칸에 DSN Server 입력 -> Web Browser에 검색으로 확인 가능
-
+ 2. Web Server에 IP 입력 (IP 칸 DNS Server 미입력)
+ 3. PC IP칸에 IP 입력 (IP 칸 DNS Server 입력)
+ 4. PC Web Browser 칸에 서버 주소 (문자, 숫자) 입력 시에 연결 가능 여부 확인
+    
 ![dns](https://github.com/user-attachments/assets/6f60bda0-5e5e-4aaa-af48-eae48c20bb4e)
