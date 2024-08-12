@@ -86,14 +86,4 @@ git push origin
 
 * pull : 원격저장소의 정보 불러오기
 git pull origin
-
-* ps -e : 핑 확인
-ps -elf
-
-* kill : 연결된 IP 강제 종료
-kill eqd12r
-
-* nice : 연결 우선 순위 (PRI) 변경
-[기본 80 +- = PRI : 낮을 수록 높음]
-nice -n -10 ping 127.0.0.1
 ```
