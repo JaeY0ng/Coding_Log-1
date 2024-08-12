@@ -52,6 +52,6 @@
 
 ### DBMS 환경 설정
 
-1. MySQL 설치 (community-window version)
+1. MySQL 설치 (community-installer 8.0.29 version)
    1. MySQL Installer -> MySQL Server 다운로드
    2. MySQL Installer -> MySQL Workbench 다운로드
