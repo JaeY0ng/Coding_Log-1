@@ -126,4 +126,14 @@ chmod 376 ex    // 2+1, 4+2+1, 4+2 = -wx, rwx, rw-
 chmod u-rw ex
 chmod g+w ex
 chmod a-x, u+r ex
+
+* ps -e : 핑 확인
+ps -elf
+
+* kill : 연결된 IP 강제 종료
+kill eqd12r
+
+* nice : 연결 우선 순위 (PRI) 변경
+[기본 80 +- = PRI : 낮을 수록 높음]
+nice -n -10 ping 127.0.0.1
 ```
