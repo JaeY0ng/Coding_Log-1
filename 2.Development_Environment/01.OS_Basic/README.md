@@ -92,7 +92,7 @@ more -15 ex1
 
 * > : 파일 생성, 기존 파일 덮어쓰기
 cat > ex - hello
-ls -l cat > ex1
+ls -l > /test/ex1    // 현재 폴더의 리스트를 test 폴더에 ex1 파일로 저장
 
 * >> : 파일 생성, 기존 파일에 추가
 cat >> ex2 - Example
@@ -112,16 +112,19 @@ tail -3 c >> ex3
    2. rwx : 소유자
    3.  rw- : 소유 그룹
    4.  --x : 게스트 사용자 (other)
-   5. ls -l로 권한 확인 가능
+
 ```
-* useradd : 사용자 추가
+* user : 사용자
+ cd /home     : 유저, 권한 확인 가능
+ ls -al
 useradd user1 : user1 추가
+userdel user1 : user1 삭제
 passwd user1 : user1 비밀번호 설정
+
 
 * chown : 소유권 변경 = 사용자에게 권한 부여
 chown user1:user1 /ex    // 소유자, 소유그룹변경
-chown .root /ex          // 소유그룹변경
-chown -R user1.user1 /ex // 하위파일, 폴더 포함 변경
+chown -R user1:user1 /ex // 하위파일, 폴더 포함 변경
 
 * chmod-numeric : 숫자로 허가권 변경
 [rwx의 숫자를 더 해서 표현]
