@@ -66,20 +66,20 @@ Git hub
   5. git init
   6. git add *
   7. git commit -m [message]
-  8. git remote -v    // 연동된 원격저장소 확인
-  9. git remote add origin HTTPS.URL    // 연결 추가 orign[이름] 경로
+  8. git branch -M main
+  9. git remote -v                       // 연동된 원격저장소 확인
+  10. git remote add origin HTTPS.URL    // 연결 추가 orign[이름] 경로
+  11. git push -u origin                 // git hub에 내용 추가
   
-* Eclipse -> Git
+* Eclipse <-> Git
   1. Eclise
   2. File -> New -> Dyanamic Web Project (Test)
-  3. Test -> Team -> Share Project... -> 상단 Use or create 체크 -> Project 체크 -> Finish
-  4. Git Repositories -> Test -> Remotes -> Create Remote -> Change -> Git hub HTTPS URL, Git hub ID, Token (passwd) 입력
- 
-* Git -> Eclipse
-  1. Git HTTPS.URL 복사
-  2. Eclipe -> File -> New -> Other -> Git Repository -> Repository Directory = Workspace 내부
-  3. 
-     
+  3. Test -> Team -> Share Project -> 상단 Use or create 체크 -> 하단 Create Repository 체크 -> Project 체크 -> Finish
+  4. Window -> Respective -> Open Respective -> Other -> Git
+  5. Git hub -> 계정 Settings -> Developer Settings -> Personal access tokens (classic) -> repo 체크 -> Token (password) 발급
+  6. Git Repositories -> 좌측 Test 옆 화살표-> Remotes -> Create Remote -> Change -> Git hub HTTPS URL, Git hub ID, token (Password) 입력 -> Save and Push
+  7. Push : Test -> Team -> Commit -> Add -> Commit Message -> Commit and Push
+  
 ```
 * push : 원격저장소에 저장
 git push origin
