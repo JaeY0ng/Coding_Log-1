@@ -102,12 +102,11 @@ IP : 10.5.4.9
  
 * 동적 : 전체 경로 학습 -> 자동 최적 경로 계산 (네트워크 변화에 민감) <br>
  -AS (Autonomous System) : 자치 시스템 = 관리자가 관리하는 라우터의 집합
-   1. IGP (Interior Gateway Protocol)
-      -RIP : Distance Vector - Hop이 가장 적은 경로 / Max = 15 -> 대규모 사용 불가,
+   1. EGP (Exterior Gateway Protocol) -> BGP
+   2. IGP (Interior Gateway Protocol)
       -Link-State : 수렴 시간 빠름, EIGRP OSPF
-   2. EGP (Exterior Gateway Protocol) -> BGP
-
-* RIP Routing : 라우터에 연결 노드 모두 입력
+      -RIP : Distance Vector - Hop이 가장 적은 경로 / Max = 15 -> 대규모 사용 불가 (라우터에 연결 노드 모두 입력)
+ 
 ![rip](https://github.com/user-attachments/assets/f9522f45-c0eb-4861-be16-697edbb53a98)
 
  <br>
