@@ -1,6 +1,6 @@
-# Git (8/8 ~ 8/9)
+# Git (8/8 ~ 8/13)
 **Git : 분산형 버전 관리 시스템의 일종 (file1.v1, file1.v2, file1.v3, ...)**
-* Working Directory : PC 내에 Git 정보가 저장되는 작업 폴더
+* Working Directory : PC 내에 Git 정보가 저장되는 작업 폴더 
 * Staging Area : 임시 저장 공간 (commment를 추가해 Local로 전달 ->Head 이동)
 * Local Repository : 최종 저장 공간 comment를 통해 파일을 구분하여 저장
 * Remote Repository : 원격 저장 공간
@@ -71,19 +71,38 @@ Git hub
   10. git remote add origin HTTPS.URL    // 연결 추가 orign[이름] 경로
   11. git push -u origin                 // git hub에 내용 추가
   
-* Eclipse <-> Git
+* Eclipse -> Git
   1. Eclise
   2. File -> New -> Dyanamic Web Project (Test)
   3. Test -> Team -> Share Project -> 상단 Use or create 체크 -> 하단 Create Repository 체크 -> Project 체크 -> Finish
   4. Window -> Respective -> Open Respective -> Other -> Git
   5. Git hub -> 계정 Settings -> Developer Settings -> Personal access tokens (classic) -> repo 체크 -> Token (password) 발급
-  6. Git Repositories -> 좌측 Test 옆 화살표-> Remotes -> Create Remote -> Change -> Git hub HTTPS URL, Git hub ID, token (Password) 입력 -> Save and Push
+  6. Git Repositories -> 좌측 Test 옆 화살표-> Remotes -> Create Remote -> Change                          
+     -> Git hub HTTPS URL, Git hub ID, token (Password) 입력 -> Save and Push         
   7. Push : Test -> Team -> Commit -> Add -> Commit Message -> Commit and Push
-  ///// push 가능 but pull 불가능 아마도 원격저장소와 eclipse 저장 공간의 차이로 발생? elcipse 후 원격 저장소 연결 시도
+
+* Git -> Eclipse
+  1. Git hub에서 Repository 생성 -> URI 복사
+  2. 빈 Workspace 폴더 생성
+  3. New -> Other -> Server -> Tomcat v9.0 -> Port 번호 부여 (8081)
+  4. New -> Import -> Projects from Git -> Clone URI -> Local Destination : Workspace 경로
+     
 ```
 * push : 원격저장소에 저장
+git add *
+git commit -m [v0.1]
 git push origin
 
 * pull : 원격저장소의 정보 불러오기
-git pull origin
+git fetch origin
+git pull origin       
 ```
+
+Project
+------------
+1. git hub : Project -> Todo에 작업 추가 -> Issue -> Convert to issue -> 좌측 Create a branch
+2. cmd : 폴더 경로에서 cmd 실행 -> git clone HTTPS -> 생성된 파일 내부 경로에서 cmd 실행                                            
+              -> git switch [branch]로 git hub에서 생성한 것과 동일한 branch 생성 후 작업 (fetch origin -> checkout [branch])              
+              -> 작업 -> add, commit -> git push origin
+2. eclipse : Team -> Swith to -> Others -> Remote -> Tracking -> 작업 -> Commit & Push
+3. git hub : Compare & Pull request -> merge -> close request -> 가급적 branch 삭제
