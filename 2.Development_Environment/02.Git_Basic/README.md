@@ -36,6 +36,7 @@ git log --oneline       // 파일명 + comment + 파일 번호 확인
 git reset --soft b45aeq   // Local Repository에서 삭제 -> commit 필요
 git reset --mixed b45aeq  // Staging Area에서 삭제 -> add, commit 필요
 git reset --mixed b45aeq  // 파일 자체 삭제 -> 파일 제작, add, commit 필요
+
 * reflog : reset된 파일 복원
 git reset b45aeq         
 ```
