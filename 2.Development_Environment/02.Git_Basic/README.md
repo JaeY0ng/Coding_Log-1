@@ -101,9 +101,9 @@ git pull origin
 
 Project
 ------------
-1. git hub : Project -> Todo에 작업 추가 -> Issue -> Convert to issue -> 좌측 Create a branch
-2. cmd : 폴더 경로에서 cmd 실행 -> git clone HTTPS -> 생성된 파일 내부 경로에서 cmd 실행                                            
+* git hub1 : Project -> Todo에 작업 추가 -> Issue -> Convert to issue -> 좌측 Create a branch
+* cmd : 폴더 경로에서 cmd 실행 -> git clone HTTPS -> 생성된 파일 내부 경로에서 cmd 실행                                            
               -> git switch [branch]로 git hub에서 생성한 것과 동일한 branch 생성 후 작업 (fetch origin -> checkout [branch])              
               -> 작업 -> add, commit -> git push origin
-2. eclipse : Team -> Swith to -> Others -> Remote -> Tracking -> 작업 -> Commit & Push
-3. git hub : Compare & Pull request -> merge -> close request -> 가급적 branch 삭제
+* eclipse : Team -> Swith to -> Others -> Remote -> Tracking -> 작업 -> Commit & Push
+* git hub2 : Compare & Pull request -> merge -> close request -> 가급적 branch 삭제
