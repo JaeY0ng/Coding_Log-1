@@ -8,7 +8,9 @@
   2. 파일 -> 도구 -> 네트워크 관리자 -> adapter2 추가 (IP 할당)
   3. 정처산기 LINUX 실행
 * Ubuntu 설치
+  1. terminal에서 ssh 연결
 * Putty 설치
+  1. Ubuntu의 IP로 접속
 
 ### Linux 명령어
 **파일, 디렉토리 기본 명령어**
