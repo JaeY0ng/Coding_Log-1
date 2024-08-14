@@ -13,4 +13,4 @@
 
 **03.Screen_Plan**               
 [03.화면설계.pdf](https://github.com/user-attachments/files/16608030/03.pdf)           
-[Use_Case](3.Screen_Plan/01.Use_case/README.md)             
+[Use_Case](3.Screen_Plan/01.Use_Case/README.md)             
