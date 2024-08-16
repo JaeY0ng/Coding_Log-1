@@ -14,3 +14,16 @@
 * 프로토타입 (Prototype) : 구체화되지 않았지만 평가를 위해 간락한 형태로 구현한 초기 모델
    1. 저수준 : 초기 아이디어 구현 단계에서 사용자이 반응 확인
    2. 고수준 : 실제 디자인의 세부 정보를 시뮬레이션
+
+
+* Figma (Beta 3 version)
+  좌상단 Draft -> Design File -> 우측 Presentation (16:9)가 PC 기본
+  상단 고정 (Header) 상단에 움직이지 않는 부분 보통 150이하
+  상단 Tool -> 좌우 길이 변경 -> 우상단 Prototype -> Scroll Behavior : Fixed
+  ctrl : 선택 / alt : 복제
+  frame 추가 -> rectangle (버튼) 생성 ->
+  hovering  설정 (마우스 커서 올리면 색 변하게) : 사각형 생성 -> 우클릭 -> create component -> 우클릭 maincopmonent -> add component -> 기본 도형 외각의 + 버튼 클릭 -> 변화시킬 도형으로 이어주기
+  -> 좌측 asset -> local asset에서 Drog and Drop -> 큰 frame flow 추가
+
+스토리보드
+*  
