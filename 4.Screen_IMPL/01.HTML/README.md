@@ -24,12 +24,13 @@
 content="width=device-width   // 뷰포트의 너비를 디바이스 너비만큼 설정
 initial-scale=1.0>            // 페이지 첫 로드 시에 확대, 축소 지정
 
-* <head>, </head>
+* <head>, </head> : viewport가 아님
+* <header>, </header> : Logo 등이 들어가는 위쪽 머리말 부분
 * <body>, </body> : 문서의 본문, viewport (사용자가 보는 영역)
-* <foot>, </foot> a
+* <footer>, </footer> : 사용자 정보
 ```
 
-###Block Tag : Box 처럼 구조를 만드는 태그
+### Block Tag : Box 처럼 구조를 만드는 태그
 -------------------------------------------
 ```
 * <p>, </p> : 여는 태그, 닫는 태그로 위 아래 여백 생성
@@ -41,23 +42,46 @@ initial-scale=1.0>            // 페이지 첫 로드 시에 확대, 축소 지�
 * Entity - &nbsp  : 공백 표현
 &nbsp; &nbsp; &nbsp    // 공백 3개
 
-* <li>, </li>  : 목록의 개별 요소
-
-* <ul>, </ul> / <ol>, </ol> : list 목록 생성
-<ul> <li>List1</li><li>List2</li> </ul>            // ul은 순서가 없는 목록 
-<ol type="1"> <li>list1></li><li>list2</li> </ol>  // ol은 순서가 있는 목록
+* <ul>, </ul> / <ol>, </ol> : 순서 있는 목록 생성 / 순서 없는 목록 생성
+<ul>
+  <li>List1</li>       // li는 list의 개별 요소
+  <li>List2</li>
+</ul>            
+<ol type="1"> <li>list1></li><li>list2</li> </ol>  // 순서 표현 방식 1, A, a, I, i
 
 * <h1>, </h1> ~ <h6>, </h6> : 글자 크기 지정 
 <h1>Hellow World</h1> : 최대 크기
 <h6>Hellow World</h6> : 최소 크기
 
-* <title>, </title> : 페이지의 제목
-<title>Naver></tilte>        // Head 안에 존재
-
-* <table>, <table>
-* <caption>, <caption>
-
+* <title>, </title> : 생성 페이지의 제목
+<title>Naver</tilte>   // Head 안에 존재
 ```
+**Table : 행, 열로 구성된 데이터의 집합**
+```
+* <tr>, </tr> : 행 구분
+* <th>, </th> : 가장 위 행 (열 제목)
+* <td>, </td> : 행의 내용
+* <thead>, </thead> : 테이블 머릿말
+* <tbody>, </tbody> : 테이블 본문
+* <tfoot>, <t/foot> : 테이블 꼬리말
+
+<table>
+  <thead>github 저장용 HTML TABLE</thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+    </tr>
+    <tr><td>1,1</td><td>1,2</td><td>1,3</td><tr>
+    <tr>
+      <td>2,1</td><td>2,2</td><td>2,3</td>
+    <tr>
+    <tr><td>3,1</td><td>3,2</td><td>3,3</td><tr>
+  </tbody>
+</table>
+```
+
 **Inline Tag : Block Tag에 내용을 작성하는 태그**
 ```
 * <a>, </a>
