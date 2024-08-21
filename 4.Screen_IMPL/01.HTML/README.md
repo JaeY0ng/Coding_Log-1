@@ -52,6 +52,15 @@ wrapper>div>section1+section2^main*2{$}
 </wrapper>
 ```
 
+**Style : 스타일 정보를 입력**
+```
+* width, height : 요소의 너비, 높이
+* margin : 여백
+<head>
+  div{margin-top: 50px; margin-right:0px;}</head>
+* color : 색상
+<p style="backgroundcolor: blue">Mycat</p>
+```
 ### Block Tag : Box 처럼 구조를 만드는 태그
 -------------------------------------------
 ```
@@ -71,11 +80,13 @@ wrapper>div>section1+section2^main*2{$}
 </ul>            
 <ol type="1"> <li>list1></li><li>list2</li> </ol>  // 순서 표현 방식 1, A, a, I, i
 
+* form : html 입력받을 수 있는 폼 생성
+
 * <h1>, </h1> ~ <h6>, </h6> : 보통 제목으로 사용되는 글자의 크기를 지정 
 <h1>Hellow World</h1> : 최대 크기
 <h6>Hellow World</h6> : 최소 크기
 
-* <section>. </section> : 독립 요서
+* <section>. </section> : 독립 요소
 <section> <h1></h1><h6></h6> </section>   // 보통 h 요소를 포함
 
 * <title>, </title> : 생성 페이지의 제목
@@ -108,7 +119,8 @@ wrapper>div>section1+section2^main*2{$}
 </table>
 ```
 
-**Inline Tag : Block Tag에 내용을 작성하는 태그**
+### Inline Tag : Block Tag에 내용을 작성하는 태그
+--------------------------------------------------
 ```
 * <a href="">, </a> : 하이퍼 링크 연결
 <a href="www.naver.com>네이버로 이동!</a>
@@ -128,15 +140,7 @@ wrapper>div>section1+section2^main*2{$}
   <source src="C:\Users\Administrator\Desktop\Dog.mp4" type="video/mp4">
 </video>
 
+* <iframe src=""> : 현재 문서에 다른 문서 포함
+<iframe src="www.google.com>
 
 ```
-style
-section
-entitiy
-width height
-maggin
-form
-input + type
-radio : 택1 버튼
-
-bootstrap
