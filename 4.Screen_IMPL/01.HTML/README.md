@@ -41,14 +41,14 @@ initial-scale=1.0>            // 페이지 첫 로드 시에 확대, 축소 지�
 * * n : n번 만큼 반복 요소 생성
 * $ : 순서대로 넘버링
 
-wrapper>div>section1+section2^main*2
+wrapper>div>section1+section2^main*2{$}
 <wrapper>
   <div>
     <section1></section1>
     <section2></section2>
   </div>
-  <main></main>
-  <main></main>
+  <main>1</main>
+  <main>2</main>
 </wrapper>
 ```
 
