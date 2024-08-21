@@ -1,4 +1,4 @@
-# HTML (8/19 ~
+# HTML (8/19 ~ 20)
 
 * VS code 설치 (최신 version)
   1. Auto Rename Tag
