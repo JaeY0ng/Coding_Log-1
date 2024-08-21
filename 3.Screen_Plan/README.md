@@ -1,4 +1,4 @@
-# Screen_Plan (8/14 ~ 
+# Screen_Plan (8/14 ~ 8/16)
 (PPT 완성 후 이미지 첨부)
 
 **유스케이스 (Usecase)**
