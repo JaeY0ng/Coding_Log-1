@@ -30,13 +30,35 @@ initial-scale=1.0>            // 페이지 첫 로드 시에 확대, 축소 지�
 * <footer>, </footer> : 사용자 정보
 ```
 
+**Emmet : 단축키**
+```
+* ! -> Tab : HTML5 표준 문서 생성
+* Ctrl + / : 주석 생성
+* Shift + Alt + ↓ : 현재 행 복제
+* > : 하위 요소 생성
+* ^ : 상위 요소 생성
+* + : 동급 요소 생성
+* * n : n번 만큼 반복 요소 생성
+* $ : 순서대로 넘버링
+
+wrapper>div>section1+section2^main*2
+<wrapper>
+  <div>
+    <section1></section1>
+    <section2></section2>
+  </div>
+  <main></main>
+  <main></main>
+</wrapper>
+```
+
 ### Block Tag : Box 처럼 구조를 만드는 태그
 -------------------------------------------
 ```
 * <p>, </p> : 여는 태그, 닫는 태그로 위 아래 여백 생성
 <p>My cat is very grumpy</p>
 
-* <div>, </div> : 정해진 역할 없이 Line 단독 사용
+* <div>, </div> : 정해진 역할 없이 Line 단독 사용 (span)
 <div>My dog is very tough</div>
 
 * Entity - &nbsp  : 공백 표현
@@ -49,13 +71,17 @@ initial-scale=1.0>            // 페이지 첫 로드 시에 확대, 축소 지�
 </ul>            
 <ol type="1"> <li>list1></li><li>list2</li> </ol>  // 순서 표현 방식 1, A, a, I, i
 
-* <h1>, </h1> ~ <h6>, </h6> : 글자 크기 지정 
+* <h1>, </h1> ~ <h6>, </h6> : 보통 제목으로 사용되는 글자의 크기를 지정 
 <h1>Hellow World</h1> : 최대 크기
 <h6>Hellow World</h6> : 최소 크기
+
+* <section>. </section> : 독립 요서
+<section> <h1></h1><h6></h6> </section>   // 보통 h 요소를 포함
 
 * <title>, </title> : 생성 페이지의 제목
 <title>Naver</tilte>   // Head 안에 존재
 ```
+
 **Table : 행, 열로 구성된 데이터의 집합**
 ```
 * <tr>, </tr> : 행 구분
@@ -84,16 +110,28 @@ initial-scale=1.0>            // 페이지 첫 로드 시에 확대, 축소 지�
 
 **Inline Tag : Block Tag에 내용을 작성하는 태그**
 ```
-* <a>, </a>
-* <span>, </span>
-* <button>, </button>
-* <img>, </img>
-<video controls autoplay muted loop>
-<form action="test.jsp" method="">
+* <a href="">, </a> : 하이퍼 링크 연결
+<a href="www.naver.com>네이버로 이동!</a>
+
+* <span>, </span> : 정해진 역할 없이 line 단독 사용 (div)
+<span>my cat is cute</span>
+
+* <button>, </button> : 클릭할 수 있는 버튼 생성
+<button>네이버로 이동</button>
+
+* <img src="" alt=> : 이미지 연결
+<img src="https://showcat.webp" alt="작은 고양이">                  //연결 주소, 이미지 이름
+<img src=C:\Users\Administrator\Desktop\Cat.png alt="큰 고양이">    // 파일 경로, 이미지 이름
+
+* <video></video><source src="" type=""></video> : 동영상 연결
+<video controls autoplay muted loop>                                // 자동 재생, 음소거, 반복    
+  <source src="C:\Users\Administrator\Desktop\Dog.mp4" type="video/mp4">
+</video>
+
+
 ```
 style
 section
-emmet
 entitiy
 width height
 maggin
