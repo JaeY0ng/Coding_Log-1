@@ -52,16 +52,7 @@ wrapper>div>section1+section2^main*2{$}
 </wrapper>
 ```
 
-**Style : 스타일 정보를 입력**
-```
-* width, height : 요소의 너비, 높이
-* margin : 여백
-<head>
-  div{margin-top: 50px; margin-right:0px;}</head>
-* color : 색상
-<p style="backgroundcolor: blue">Mycat</p>
-```
-### Block Tag : Box 처럼 구조를 만드는 태그
+### Block Tag : Box 처럼 구조를 만드는 태그 (Line 단독 사용)
 -------------------------------------------
 ```
 * <p>, </p> : 여는 태그, 닫는 태그로 위 아래 여백 생성
@@ -125,7 +116,7 @@ wrapper>div>section1+section2^main*2{$}
 * <a href="">, </a> : 하이퍼 링크 연결
 <a href="www.naver.com>네이버로 이동!</a>
 
-* <span>, </span> : 정해진 역할 없이 line 단독 사용 (div)
+* <span>, </span> : 정해진 역할 없이 사용 (div) 
 <span>my cat is cute</span>
 
 * <button>, </button> : 클릭할 수 있는 버튼 생성
