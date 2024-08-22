@@ -30,35 +30,42 @@ initial-scale=1.0>            // 페이지 첫 로드 시에 확대, 축소 지�
 * <footer>, </footer> : 사용자 정보
 ```
 
-**Emmet : 단축키**
+**Emmet**
 ```
+* <___ class=""></___> : Class 선택자
+<div class="fst_div></div>      // fst_div 이름 부여
+
+* <___ id="slider"></___> : ID 선택자
+<div id="password></div>        // 유형 선택
+
 * ! -> Tab : HTML5 표준 문서 생성
 * Ctrl + / : 주석 생성
 * Shift + Alt + ↓ : 현재 행 복제
-* > : 하위 요소 생성
-* ^ : 상위 요소 생성
-* + : 동급 요소 생성
-* * n : n번 만큼 반복 요소 생성
+* > : 하위 자식 요소 생성
+* ^ : 상위 부모 요소 생성
+* + : 동급 형제 요소 생성
+* *n : n번 만큼 반복 요소 생성
 * $ : 순서대로 넘버링
+* {} : 안에 텍스트 생성
 
-wrapper>div>section1+section2^main*2{$}
+wrapper>div>section1+section2^main{메인$}*2
 <wrapper>
   <div>
-    <section1></section1>
-    <section2></section2>
+    <section1>{섹션1}</section1>
+    <section2>{섹선2}</section2>
   </div>
-  <main>1</main>
-  <main>2</main>
+  <main>메인1</main>
+  <main>메인2</main>
 </wrapper>
 ```
 
 ### Block Tag : Box 처럼 구조를 만드는 태그 (Line 단독 사용)
 -------------------------------------------
 ```
-* <p>, </p> : 여는 태그, 닫는 태그로 위 아래 여백 생성
+* <p>, </p> : 단락 태그로 위, 아래 공백 생성
 <p>My cat is very grumpy</p>
 
-* <div>, </div> : 정해진 역할 없이 Line 단독 사용 (span)
+* <div>, </div> : 정해진 역할 없는 블럭형 태그 (span)
 <div>My dog is very tough</div>
 
 * Entity - &nbsp  : 공백 표현
@@ -89,24 +96,29 @@ wrapper>div>section1+section2^main*2{$}
 * <tr>, </tr> : 행 구분
 * <th>, </th> : 가장 위 행 (열 제목)
 * <td>, </td> : 행의 내용
+* <caption>, </caption> : 테이블 제목
 * <thead>, </thead> : 테이블 머릿말
 * <tbody>, </tbody> : 테이블 본문
 * <tfoot>, <t/foot> : 테이블 꼬리말
+* <rowspan> : 행 병합
+<___ rowspan="2">1</___>     // 1위치 기준으로 하단 2칸만큼 셀 생성
+
+* <colspan> : 열 병합
+<___ colspan="3">2</___>     // 2위치 기준으로 우측 3칸만큼 셀 생성
 
 <table>
-  <thead>github 저장용 HTML TABLE</thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-    </tr>
-    <tr><td>1,1</td><td>1,2</td><td>1,3</td><tr>
-    <tr>
-      <td>2,1</td><td>2,2</td><td>2,3</td>
-    <tr>
-    <tr><td>3,1</td><td>3,2</td><td>3,3</td><tr>
-  </tbody>
+    <caption>테이블 연습</cation>
+    <tbody>
+      <tr>
+        <td rowspan="3">1,1</td>      // (1,1)과 (2,1), (3,1) 병합  
+        <td>1,2</td>  
+        <td>1,3</td></tr>
+      <tr>
+        <td>2,2</td>
+        <td>2,3</td> </tr>  
+      <tr>3,1</td>
+        <tr colspan="2">3,2</tr>     // (3,2)와 (3,3) 병합
+    </tbody>
 </table>
 ```
 
@@ -116,7 +128,7 @@ wrapper>div>section1+section2^main*2{$}
 * <a href="">, </a> : 하이퍼 링크 연결
 <a href="www.naver.com>네이버로 이동!</a>
 
-* <span>, </span> : 정해진 역할 없이 사용 (div) 
+* <span>, </span> : 정해진 역할 없는 라인형 태그 (div) 
 <span>my cat is cute</span>
 
 * <button>, </button> : 클릭할 수 있는 버튼 생성
@@ -133,4 +145,10 @@ wrapper>div>section1+section2^main*2{$}
 
 * <iframe src=""> : 현재 문서에 다른 문서 포함
 <iframe src="www.google.com>
+
+* <form action="" method="" class""> : 정보를 입력 받고 서버로 전달
+<form action="test.jsp" method="GET" class"container w-25">
+          <input type="text"      name="userid"            placeholder="아이디 입력">
+</form>  // text형식을 입력받는다   정보를 userid라고 저장   출력메시지
 ```
+
