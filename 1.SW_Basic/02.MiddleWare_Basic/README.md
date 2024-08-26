@@ -1,4 +1,4 @@
-# 2. MiddleWare Basic (8/1 ~ 8/2)
+# MiddleWare Basic (8/1 ~ 8/2)
 ```
 * HardWare : PC의 부품                                  
 * SoftWare
