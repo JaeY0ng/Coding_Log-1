@@ -151,4 +151,4 @@ wrapper>div>section1+section2^main{메인$}*2
           <input type="text"      name="userid"            placeholder="아이디 입력">
 </form>  // text형식을 입력받는다   정보를 userid라고 저장   출력메시지
 ```
-
+overflow: hidden; 영역 넘는 부분 숨김
