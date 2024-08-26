@@ -1,4 +1,4 @@
-# 3. DataBase (8/2 ~ 8/6)
+# DataBase (8/2 ~ 8/6)
 ```
 * Database : 데이터의 집합
 * Schema : DB의 구조를 전반적으로 기술한 것 - 외부, 내부, 개념
