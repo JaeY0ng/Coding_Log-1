@@ -146,9 +146,9 @@ div{
 [translate, scale, rotate, skew, perspective : 이동, 크기, 회전, 기울기, 3D 회전]
 .par:hover{
   transform: translate(200px, 100px);                 // 위치 이동
-  transform: scale(2,2);                              // 크기 변경
-  transform: rotate(180deg);                          // 회전
-  transform: skew(15deg);                             // 기울기
+  transform: scale(1.5);                              // 1.5배
+  transform: rotate(180deg);                          // 180도 회전
+  transform: skew(15deg);                             // 15도 기울기
   transform: translate(20px, 20px) skew(30deg);
   trnasform: perspective(30px) rotateY(360deg);       // 3D 회전
   backface-visibility: hidden;                        // 회전체 후면 숨김
