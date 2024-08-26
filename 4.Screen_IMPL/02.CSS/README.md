@@ -44,6 +44,7 @@ margin: 50px;
 padding: 5% 10%                  // 상하 5%, 좌우 10%
 
 * overflow : 내용이 넘칠 경우 표시 방법
+overflow: hidden;                // 구역 밖 부분 숨김
 
 * box-sizing : 총 너비, 총 높이
 box-sizing: content-box;
@@ -157,7 +158,7 @@ div{
 <style> div{
   animation-name: moving1;                 // 효과 이름 moving1
   animation-duration: 2s;                  // 효과 시간 2초
-  animation-iteraction-count: infinites;   // 효과 반복 무한
+  animation-iteraction-count: infinite;   // 효과 반복 무한
   animation-direction: alternate;          // 역방향 이동
   animation-timing-function: linear;       // 이동 속도 일정
 }
