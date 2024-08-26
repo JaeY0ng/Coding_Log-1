@@ -27,16 +27,16 @@ initial-scale=1.0>            // 페이지 첫 로드 시에 확대, 축소 지�
 * <head>, </head> : viewport가 아님
 * <header>, </header> : Logo 등이 들어가는 위쪽 머리말 부분
 * <body>, </body> : 문서의 본문, viewport (사용자가 보는 영역)
-* <footer>, </footer> : 사용자 정보
+* <footer>, </footer> : 사용자 정보 같은 꼬리말 부분
 ```
 
 **Emmet**
 ```
 * <___ class=""></___> : Class 선택자
-<div class="fst_div></div>      // fst_div 이름 부여
+<div class="fst_div"></div>      // fst_div 이름 부여
 
 * <___ id="slider"></___> : ID 선택자
-<div id="password></div>        // 유형 선택
+<div id="password"></div>        // 유형 선택
 
 * ! -> Tab : HTML5 표준 문서 생성
 * Ctrl + / : 주석 생성
