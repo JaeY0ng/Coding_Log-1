@@ -122,7 +122,7 @@ wrapper>div>section1+section2^main{메인$}*2
 </table>
 ```
 
-### Inline Tag : Block Tag에 내용을 작성하는 태그
+### Inline Tag : Block Tag에 내용을 작성하는 태그 (Line 일부 사용)
 --------------------------------------------------
 ```
 * <a href="">, </a> : 하이퍼 링크 연결
