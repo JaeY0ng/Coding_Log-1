@@ -31,23 +31,21 @@
 **CSS_Box**
 ```
 * border : 주위 선
-<head <style> main{border-radius 1px solid} </style></head>     // 주위에 1px 둥근 사각형 생성
+<head>
+  <style> main{border-radius 1px solid} </style>      // 주위에 1px 둥근 사각형 생성
+</head>
 
 * margin : 바깥쪽 여백
+[margin-top, margin-bottom, margin-left, margin-right]
 border: 1px solid;               // border 필요
 margin: 50px;
 
 * padding : 안쪽 여백
 padding: 5% 10%                  // 상하 5%, 좌우 10%
 
-* position : 요소 배치
-[none, fixed, static : 표시 안함, 고정, 기본]   
-position relative;               // 부모 위치 등록
-position absolute;               // 자식 위치 상대적 등록
-
 * display: flex   : 자식 요소 수평 배치
-[block, inline-block]
-display: flex;
+[none, block, inline : 표시 안함, 전체 line, 부분 line]
+display: flex;                  // 1차원 배치
 justify-content: center;        // 가로축: 중앙
 align-items: center;            // 세로축: 중앙
 
@@ -71,6 +69,44 @@ name{color: red;}
 <div id="name"></div>
 
 * class : class 선택자
-.mains{background-color: lightgray}
-<main class="mains></main>
+.parents{background-color: lightgray}
+<main class="parents"></main>
+
+* , : group 선택자
+id, .group{border : 5px double red;}
+
+*   : 후손 포함 자손 선택자  // 공백
+.par son{}
+
+* > : 후손 제외 자식 선택자
+.par>son{}
+
+* ~ : 하위 모든 선택자 동위 선택자
+par~son{}
+
+* + : 하위 1개 선택자 동위 선택자
+
+* nth-child(n) : n번째 요소 선택
+[first, nth, last]
+ul>li:last-child{}                   // list의 마지막 요소 선택
+
+* checkbox : 체크 박스
+input[type='checkbox' id="chk"]      // checkbox 입력 생성, 명명chk
+<label for="chk">체크 박스</label>   // chk를 위한 문구 표시
+
+* :event : event 생성
+[hover, active, visited, checked : 커서 위치, 활성화, 방문, 체크]
+<style> son:hover{background-color: tomato;} </style>
+
+* ::after, ::before : 가상 선택자
+.parents::after{content:'★';}      // body의 contents 모든 영역 뒤에 ★ 추가 표시
+```
+
+**CSS_Position**
+```
+* position : 요소 배치
+[sticky, fixed, static : 스크롤에 걸리면 고정, 고정, 기본]   
+position relative;               // 부모 위치 등록
+position absolute;               // 자식 위치 상대적 등록
+
 ```
