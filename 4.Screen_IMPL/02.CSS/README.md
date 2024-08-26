@@ -100,11 +100,11 @@ input[type='checkbox' id="chk"]      // checkbox 입력 생성, 명명chk
 -------------------------------
 ```
 * display : 배치 형태
-[flex, grid, block, inline, none : 1차원, 2차원, 전체 line, 일부 line, 표시 안함]
+[flex, grid, block, inline, none : 수평 배치, 2차원, 전체 line, 일부 line, 표시 안함]
 * justify-content : 항목 간 공간
 [center, start, space-between : 중간, 시작부, 항목 사이 동일 간격]
 * align-items : display: flex 정렬 방향 
-[stretch, center, flex-end : fit한 기본값, 가운데, 아래쪽]
+[stretch, center, flex-end : fit한 기본값, 가운데-height or width 100%, 아래쪽]
 
 <style> div{
   display: flex;
