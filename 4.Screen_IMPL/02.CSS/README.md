@@ -6,6 +6,11 @@
 * em : 부모 크기 기준으로 배수형태인 상대적 크기
 * rem : root를 기준으로 배수형태인 상대적 크기
 
+**CSS, HTML 문서 분리**
+  1. HTML 문서 작성 
+  2. CSS 문서에 style 작성
+  3. HTML 문서 <HEAD>에 CSS 문서 경로 <link rel="stylesheet" href="./CSS/common.css"> 작성
+
 **CSS_Basic**
 ```
 * width, height : 너비, 높이
@@ -106,6 +111,7 @@ input[type='checkbox' id="chk"]      // checkbox 입력 생성, 명명chk
 [center, start, space-between : 중간, 시작부, 항목 사이 동일 간격]
 * align-items : display: flex 정렬 방향 
 [stretch, center, flex-end : fit한 기본값, 가운데-height or width 100%, 아래쪽]
+* 정렬 자식 요소에 display, 부모 요소에 height, width 지정 필요
 
 <style> div{
   display: flex;
@@ -168,3 +174,5 @@ div{
   to{left:500vw; top:50vw;}                // 도착 위치
 } </style>
 ```
+
+**Media Query : 반응형 웹 페이지**
