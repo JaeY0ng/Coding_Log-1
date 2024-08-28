@@ -8,9 +8,9 @@
 
 
 **HTML (Hyper Text Markup Language) : 웹 페이지에서 다른 페이지로 이동 가능**
-* 요소 (Element) : 콘텐츠를 감싸는 태그
-* 속성 (Attribute)
-* 값 (Value)
+* 태그 (Tag) : 속성을 감싸는 부분 <>, </>
+* 속성 (Attribute) : 태그 안에 들어가는 부분 <>속성</>
+* 요소 (Element) : 태그 + 속성 <p>My cat is cute</p>
 
 ```
 * !DOCTPYE : HTML 버전 정보
@@ -24,10 +24,10 @@
 content="width=device-width   // 뷰포트의 너비를 디바이스 너비만큼 설정
 initial-scale=1.0>            // 페이지 첫 로드 시에 확대, 축소 지정
 
-* <head>, </head> : viewport가 아님
-* <header>, </header> : Logo 등이 들어가는 위쪽 머리말 부분
+* <head>, </head> : viewport가 아닌 가장 윗부분
+* <header>, </header> : 위쪽 머리말 부분과 같은 가장 위쪽의 viewport
 * <body>, </body> : 문서의 본문, viewport (사용자가 보는 영역)
-* <footer>, </footer> : 사용자 정보 같은 꼬리말 부분
+* <footer>, </footer> : 아래쪽 사용자 정보 같은 꼬리말 부분 viewport
 ```
 
 **Emmet**
@@ -62,14 +62,13 @@ wrapper>div>section1+section2^main{메인$}*2
 ### Block Tag : Box 처럼 구조를 만드는 태그 (Line 단독 사용)
 -------------------------------------------
 ```
-* <p>, </p> : 단락 태그로 위, 아래 공백 생성
-<p>My cat is very grumpy</p>
-
-* <div>, </div> : 정해진 역할 없는 블럭형 태그 (span)
+* <div>, </div> : 의미 관계가 없는 블럭형 태그 (span)
 <div>My dog is very tough</div>
 
-* Entity - &nbsp  : 공백 표현
-&nbsp; &nbsp; &nbsp    // 공백 3개
+* <section>, </section> : 의미 관계를 다른 요소로 분리
+<section> <h1></h1><h6></h6> </section>
+
+* <article>, </article> : 독립적 내용
 
 * <ul>, </ul> / <ol>, </ol> : 순서 있는 목록 생성 / 순서 없는 목록 생성
 <ul>
@@ -84,11 +83,14 @@ wrapper>div>section1+section2^main{메인$}*2
 <h1>Hellow World</h1> : 최대 크기
 <h6>Hellow World</h6> : 최소 크기
 
-* <section>. </section> : 독립 요소
-<section> <h1></h1><h6></h6> </section>   // 보통 h 요소를 포함
-
 * <title>, </title> : 생성 페이지의 제목
 <title>Naver</tilte>   // Head 안에 존재
+
+* <p>, </p> : 단락 태그로 위, 아래 공백 생성
+<p>My cat is very grumpy</p>
+
+* Entity - &nbsp  : 공백 표현
+&nbsp; &nbsp; &nbsp    // 공백 3개
 ```
 
 **Table : 행, 열로 구성된 데이터의 집합**
@@ -125,15 +127,15 @@ wrapper>div>section1+section2^main{메인$}*2
 ### Inline Tag : Block Tag에 내용을 작성하는 태그 (Line 일부 사용)
 --------------------------------------------------
 ```
+* <span>, </span> : 의미 관계가 없는 라인형 태그 (div) 
+<span>my cat is cute</span>
+
 * <a href="">, </a> : 하이퍼 링크 연결
 <a href="www.naver.com>네이버로 이동!</a>
 
-* <span>, </span> : 정해진 역할 없는 라인형 태그 (div) 
-<span>my cat is cute</span>
-
 * <button>, </button> : 클릭할 수 있는 버튼 생성
 <button>네이버로 이동</button>
-
+ 
 * <img src="" alt=> : 이미지 연결
 <img src="https://showcat.webp" alt="작은 고양이">                  //연결 주소, 이미지 이름
 <img src=C:\Users\Administrator\Desktop\Cat.png alt="큰 고양이">    // 파일 경로, 이미지 이름
