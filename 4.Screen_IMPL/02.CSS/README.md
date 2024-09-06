@@ -54,7 +54,7 @@ overflow: hidden;                // 구역 밖 부분 숨김
 * box-sizing : 총 너비, 총 높이
 box-sizing: content-box;
 ```
-
+           
 **CSS_Selector**
 ```
 * * : 전체 선택자
@@ -101,7 +101,7 @@ input[type='checkbox' id="chk"]      // checkbox 입력 생성, 명명chk
 * ::after, ::before : 가상 선택자
 .parents::after{content:'★';}      // body의 contents 모든 영역 뒤에 ★ 추가 표시
 ```
-
+            
 ### CSS_Layout : 요소 위치 지정
 -------------------------------
 ```
@@ -119,7 +119,7 @@ input[type='checkbox' id="chk"]      // checkbox 입력 생성, 명명chk
   align-items: center;
 } </style>
 ```
-
+        
 **CSS_Position : Box의 위치 지정**
 ```
 * z-index : 요소의 z축 (앞, 뒤) 지정
@@ -139,7 +139,7 @@ input[type='checkbox' id="chk"]      // checkbox 입력 생성, 명명chk
   .son{position: absolute; bottom: 1200px; right: 1000px;}
 </style>
 ```
-
+               
 **CSS_Animation : 요소 움직임**
 ```
 * transition : 요소 생성 시간
@@ -175,7 +175,7 @@ div{
   to{left:500vw; top:50vw;}                // 도착 위치
 } </style>
 ```
-
+           
 **Media Query : 반응형 웹 페이지**
 1. 메인 width: 100%로 설정
 2. 요소 width를 메인에서 차지하는 %로 설정
