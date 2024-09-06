@@ -164,15 +164,37 @@ div{
 <style> div{
   animation-name: moving1;                 // 효과 이름 moving1
   animation-duration: 2s;                  // 효과 시간 2초
-  animation-iteraction-count: infinite;   // 효과 반복 무한
+  animation-iteraction-count: infinite;    // 효과 반복 무한
   animation-direction: alternate;          // 역방향 이동
   animation-timing-function: linear;       // 이동 속도 일정
 }
 
 @keyframes moving1{                        // 애니메이션 효과 명명
   from{left: 100vw; top: 20vw;}            // 출발 위치
+
   to{left:500vw; top:50vw;}                // 도착 위치
 } </style>
 ```
 
 **Media Query : 반응형 웹 페이지**
+1. 메인 width: 100%로 설정
+2. 요소 width를 메인에서 차지하는 %로 설정
+3. 메인 display: flex; justfy-content; align-item 설정으로 요소 positioning
+   -> 좌, 우 여백이 먼저 감소
+4. 요소 max-width, min-width 설정
+5. viewport 크기 별 Media Query 설정
+```
+@media (max-width: 1440) {    // viewport-width <= 1440px
+  section>ul>li:nth-child(8) {  
+    display: none;            // 8번 목록 숨기기
+  }
+  section>ul>li {
+    aspect-ratio: 1           // 목록 가로-세로 비율 1:1
+  }
+}
+@media (max-width: 700px) {   // viewport-width <= 700px
+  section>ul {
+    display: block;           // 목록 세로 배치 
+  }
+}
+```
