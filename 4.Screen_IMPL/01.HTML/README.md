@@ -4,7 +4,7 @@
   1. Auto Rename Tag
   2. Liver Server
   3. Prettier Code for Formatter
-  4. 설치 경로 -> cmd -> code // 현재 위치에서 vscode 실행               
+  4. 설치 경로 -> cmd -> code // 현재 위치에서 vscode 실행                 
 
 
 **HTML (Hyper Text Markup Language) : 웹 페이지에서 다른 페이지로 이동 가능**
