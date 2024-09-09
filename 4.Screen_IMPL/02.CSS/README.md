@@ -30,15 +30,19 @@
   src:url("___")                
 <wrapper style="font-family:'궁서체'>Hello World         // 궁서체로 Hello World 출력
 
+* font-weight : 글자 효과
+font-weight: bold                                        // 굵은 글씨 
+
 * <link rel="styleshee" href"./css/common.css"> : 외부 CSS 파일 적용
 ```
 
 **CSS_Box**
 ```
 * border : 주위 선
-<head>
-  <style> main{border-radius 1px solid} </style>      // 주위에 1px 둥근 사각형 생성
-</head>
+<style>
+  main{border: 1px solid red;                            // 주위에 빨간 1px 사각형 생성
+  border-radious: 5px;}                                  // border 모서리에 둥글게
+</style>      
 
 * margin : 바깥쪽 여백
 [margin-top, margin-bottom, margin-left, margin-right]
@@ -65,7 +69,7 @@ div>ul{display: flex;}
 <div><ul></ul></div>
 
 * id : ID 선택자
-name{color: red;}
+#name{color: red;}
 <div id="name"></div>
 
 * class : class 선택자
@@ -107,13 +111,16 @@ input[type='checkbox' id="chk"]      // checkbox 입력 생성, 명명chk
 ```
 * display : 배치 형태
 [flex, grid, block, inline, none : 수평 배치, 2차원, 전체 line, 일부 line, 표시 안함]
+
 * justify-content : 항목 간 공간
 [center, start, space-between : 중간, 시작부, 항목 사이 동일 간격]
+
 * align-items : display: flex 정렬 방향 
 [stretch, center, flex-end : fit한 기본값, 가운데-height or width 100%, 아래쪽]
-* 정렬 자식 요소에 display, 부모 요소에 height, width 지정 필요
 
-<style> div{
+* 부모 요소에서 자식 요소의 배치 방식 지정 (diplay: flex여야 적용 가능)
+
+<style> ul{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -123,7 +130,7 @@ input[type='checkbox' id="chk"]      // checkbox 입력 생성, 명명chk
 **CSS_Position : Box의 위치 지정**
 ```
 * z-index : 요소의 z축 (앞, 뒤) 지정
-<div style="z-index: 1">z-인덱스</div>  // 기본값 : 0
+<div style="z-index: 1">z-인덱스</div>              // 기본값 : 0
  
 * static : 순차적 배치되는 기본 속성
 * fixed : viewport 기준으로 위치 조정, scroll과 무관하게 위치 고정
