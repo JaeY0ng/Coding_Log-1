@@ -17,6 +17,8 @@
   3. Function
   4. Date
   5. Map
+ 
+Object???
 console.log
 let / const
 The document.write() method writes a string of text to a document stream
