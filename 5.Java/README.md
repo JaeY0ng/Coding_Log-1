@@ -121,3 +121,11 @@ String str = Strign.valueOf(dvalue);		// "3.14"
 String str = dvalue + "";			// "3.14"
 //str = dvalue;					   문자형으로 형변환 필요 -> 에러
 ```
+
+**Scanner : 키보드로 값을 입력받는 생성자**
+```
+* import java.util.Scanner : library에서 추가 <- ctril + shift + o
+* System.in : 표준 입력 스트림
+* new Scanner(System.in) : 키보드로 데이터를 받는 Scanner 객체 추가
+* Scanner sc : 자료형 sc
+```
