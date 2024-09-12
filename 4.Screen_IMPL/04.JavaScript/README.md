@@ -1,22 +1,20 @@
-04. JavaScript (8/30 ~ )
+# 04. JavaScript (8/30 ~ )
 **JavaScript (JS) : 웹에서 복잡한 기능을 구현할 수 있는 스크립팅 프로그래밍 언어**
 * 변수
-  1. var
-  2. let
-  3. const
+  * var
+  * let
+  * const
 * 자료형
-  1. Number
-  2. BigInt
-  3. String
-  4. Boolean
-  5. Undefined
-  6. Null
+  * Number
+  * String
+  * Boolean
+  * Null
 * 참고 자료형
-  1. Object
-  2. Array
-  3. Function
-  4. Date
-  5. Map
+  * Object
+  * Array
+  * Function
+  * Date
+  * Map
  
 Object???
 console.log
