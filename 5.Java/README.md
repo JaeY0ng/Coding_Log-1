@@ -80,11 +80,44 @@ System.out.printf("Today is %d day \n", 28);	// 서식 문자, 비그래픽 문�
   * long (8byte) 
   * float (4byte) : 소수점 6 ~ 9 자리
   * double (8byte) : 소수점 15 ~ 18 자리
+  * String : 문자열
 * 선언 : 변수에 변수명 부여
 * 초기화 : 변수에 값 부여
 * 정의 : 변수에 변수명, 값 부여
  * int n1 = 100;	(4byte 정수만 저장되는 공간 형성 -> 공간에 100 저장 -> 저장 공간에 이름 부여)
+```
+byte < short = char < int < long < float < double
+byte  bn;		// 선언
+bn = 100;		// 초기화
+short sn = -500;	// 정의
+char cn = 'A'; 		// 문자 -> 아스키코드
+int n = 10000000;
+long ln = 5000000000000;
+float fn = 1.123456;
+double dn = 5.123456789123456789;
+String str = "문자열";
+```
 
 **자료형 변환**
-* 자동 형변환
-* 수동 형변환
+* 자동 형변환 (암시적) : 컴파일러에 의한 자동 형변환
+  * 작은 자료형에서 큰 자료형으로 형변환
+* 강제 형변환 (명시적) : 프로그래머에 의한 강제 형변환
+  * 큰 자료형에서 작은 자료형으로 형변환 -> 데이터 손실 발생
+```
+byte n = 100;
+n = (int) 500;		// 자동 형변환
+n = (byte) -100;	// 강제 형변환
+
+byte n1 = 100;
+int n2 = 200;
+int result = n1 + n2;	// 연산식의 n2 : int 
+//n1 = (byte) -100;	  -> 연산식의 가장 큰 자료형인 int로 자동 형변환 -> 에러
+
+System.out.println("문자열1" + "문자열2");	// 문자열1문자열2
+System.out.println("문자열" + '!');		// 문자열!
+
+double dvalue = 3.14;
+String str = Strign.valueOf(dvalue);		// "3.14"
+String str = dvalue + "";			// "3.14"
+//str = dvalue;					   문자형으로 형변환 필요 -> 에러
+```
