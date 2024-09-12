@@ -185,15 +185,15 @@ String 거짓 = (a != 0) || (a >5) ? "참" : "거짓";
 ## 흐름 제어문
 ------------
 ```
-* if
-[if, else if, else]
+* if : 위쪽부터 조건에 맞는 1개만 실행
+[if, else if, else : 첫 조건식, 첫 조건식이 false인 n번재 조건식, 모든 조건식이 false 경우]
 int a = 3;
-if (a == 3) 		// 첫 조건식
+if (a == 3) 		// 첫 조건식 (필수)
   	a = 5;
-else if (a > 5) {	// 첫 조건식이 false인 경우 n번째 조건식
+else if (a > 5) {	// 선택적
 	a = 8;
 }
-else			// 모든 조건식이 false인 경우
+else			// 선택적
 	a = 10;
 
 ```
