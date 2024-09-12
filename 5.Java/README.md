@@ -7,7 +7,7 @@
 4. Github -> New Repository -> add Readme 해제 -> Repository HTTPS 복사
 5. Git Repositories -> Java Project -> Remote -> Create Remote -> Github Repository Link와 연결
         
-**Java Basic : C언어 (절차 지향) + C++언어 (객체 지향)를 기반으로 하는 객체지향 프로그래밍 언어, 소프트웨어 플랫폼**
+**Java Basic : C언어 (절차 지향)와 C++언어 (객체 지향)를 기반으로 하는 객체지향 프로그래밍 언어, 소프트웨어 플랫폼**
 * Programming : Pro (미리) + Gram (쓰다) -> 앞으로 할 일을 미리 적어두는 작업
 * Class 영역 : 객체 지향 문법 적용 단위
 * Method (함수) : 작업 수행에 필요한 코드들을 묶어서 실행하는 단위
@@ -143,4 +143,57 @@ public class Main {
 		String str = sc.nextLine();	// nextLine은 타 값 입력 후에 사용 시, 초기화 필요
 	}
 }
+```
+
+**연산자**
+```
+* 기본 산술 연산자
+[+, -, *, /, % : 더하기, 빼기, 곱하기, 나누기-몫, 나누기-나머지]
+
+* 복합 대입 연산자 (대입 + 산술)
+[+=, -=, *=]
+a += 10;				// a = a + 10;
+
+* 비교 연산자
+a = 5; b = 10;
+a == 5;
+a <= b;
+a != b;					// 느낌표 위치 앞
+
+* 논리 연산자
+[&&, || : 조건 모두 true면 true, 조건 중 최소 하나 true면 true]
+(a < b) && (a > 15);			// true	(조건이 flase면 이 후 조건 계산 x -> false)
+(b != 5) || (a != 5);			// true (조건이 true면 이 후 조건 계산 x -> true)
+
+* 논리 부정 연산자
+[=! : 연산자 의미 반전 (느낌표 위치 뒤)]
+boolean flag = true;			// flag == true;
+flag =! flag;				// flag == false;
+	
+* 증감 연산자
+[++, -- : 변수 앞에 위치 -> 전치 연산, 변수 뒤에 위치 -> 후치 연산]
+a = 5; b = 10;
+c = a++ + ++b;				// a = 6, b = 11, c = 17
+c = a-- - b--;				// a = 4, b = 9, c = 15
+
+* 삼항 연산자
+[선언 = 조건 ? 참 : 거짓]
+a = 3;
+String 거짓 = (a != 0) || (a >5) ? "참" : "거짓";
+```
+
+## 흐름 제어문
+------------
+```
+* if
+[if, else if, else]
+int a = 3;
+if (a == 3) 		// 첫 조건식
+  	a = 5;
+else if (a > 5) {	// 첫 조건식이 false인 경우 n번째 조건식
+	a = 8;
+}
+else			// 모든 조건식이 false인 경우
+	a = 10;
+
 ```
