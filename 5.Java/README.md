@@ -123,9 +123,24 @@ String str = dvalue + "";			// "3.14"
 ```
 
 **Scanner : 키보드로 값을 입력받는 생성자**
+* next : 문자열 - 공백 포함 불가능 (공백 입력 -> 다른 문자열로 인식)
+* nextLine : 문자열 - 공백 포함 가능 (공백 입력 -> 같은 문자열로 인식)
+* nextInt, nextLong
+* nextFloat, nextDouble 
 ```
-* import java.util.Scanner : library에서 추가 <- ctril + shift + o
-* System.in : 표준 입력 스트림
-* new Scanner(System.in) : 키보드로 데이터를 받는 Scanner 객체 추가
-* Scanner sc : 자료형 sc
+import java.util.Scanner;				// Scanner Library 추가
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);	// 키보드로 값을 입력 받는 생성자 Scanner 객체의 자료형 sc
+
+		// 띄어쓰기로 한 번에 입력 가능 -> 1 3.14 문자열1 문자열2
+		int n = sc.nextInt();
+		double d = sc.nextDouble();
+		String s1 = sc.next();			
+		String s2 = sc.next();
+
+		sc.nextLine();			// 초기화하기 (한 줄 띄어주기) <- nextLine의 공백, 엔터 인식 방식 차이
+		String str = sc.nextLine();	// nextLine은 타 값 입력 후에 사용 시, 초기화 필요
+	}
+}
 ```
