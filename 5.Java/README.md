@@ -196,4 +196,24 @@ else if (a > 5) {	// 선택적
 else			// 선택적
 	a = 10;
 
+* switch : 값이 맞는 1개만 실행
+[case n, default, break]
+case 1 : n = 1;
+	System.out.println("n = 1");
+	break;		// switch문에서 빠져나가는 break
+case 2 : n = 2;
+	SYstem.out.println("n = 2");
+	break;
+default			// case에 없는 기본값
+	System.out.println("n = 0");
+
+* while : 조건에 맞는 동한 지속 실행
+[while, do while]
+int n = 0;
+while (n <= 3) {		// n이 3이하인 동안 반복
+	n++;
+}
+do while (n >=5) {		// 조건에 맞지 않아도 1번 실행
+	n++;
+}
 ```
