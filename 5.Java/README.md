@@ -207,12 +207,37 @@ case 2 : n = 2;
 default			// case에 없는 기본값
 	System.out.println("n = 0");
 
-* while : 조건에 맞는 동한 지속 실행
+* while : 조건에 맞는 동한 반복 실행
 [while, do while]
 int n = 0;
 while (n <= 3) {		// n이 3이하인 동안 반복
 	n++;
 }
+
+* for : 특정 횟수 동안 반복 실행
+for(int i = 0; i < 10; i++) {
+	System.out.println(i);
+}
+
+* continue : 반복문의 처음으로 돌아감
+for (int i = 0; i < 10; i++) {
+	if (i == 5)
+		continue;		// i == 5면 하위 부분 스킵
+	System.out.println(i);		// 0, 1, 2, 3, 4, 6, 7, 8, 9,
+}
+
+* break
+[break, break Exit : 해당 반복문만 종료, 종료하는 부분 선택 가능]
+Exit : 
+for (int i = 0; i < 10; i++) {
+	if (i == 5)
+		break;			// i == 5면 반복문 그만
+	System.out.println(i);		// 0, 1, 2, 3, 4
+}
+break Exit;				
+```
+
+Class
 do while (n >=5) {		// 조건에 맞지 않아도 1번 실행
 	n++;
 }
