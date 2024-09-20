@@ -1,6 +1,6 @@
 # 04. JavaScript (8/30 ~ )
 **JavaScript (JS) : 웹에서 복잡한 기능을 구현할 수 있는 스크립팅 프로그래밍 언어**
-* 변수
+* 변수  
   * var : 전역 가변수
   * let : 지역 가변수
   * const : 지역 불변수
@@ -46,6 +46,6 @@ document.querySelectorAll(.Obj);   // id
 
 * addEventLisnter() : 이벤트 추가
 Ob.addEventListner((event, 'click') -> {
-  Ob.getAttribute('style', 'backgroundColor: black');
+  Ob.getAttribute('style', 'background-color: black');
 })
 ``` 
