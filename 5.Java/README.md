@@ -6,7 +6,8 @@
 3. Window -> Show View -> Other -> Git Repositories, Git Staging
 4. Github -> New Repository -> add Readme 해제 -> Repository HTTPS 복사
 5. Git Repositories -> Java Project -> Remote -> Create Remote -> Github Repository Link와 연결
-        
+* (Import -> Project from git -> Clone URL)
+
 **Java Basic : C언어 (절차 지향)와 C++언어 (객체 지향)를 기반으로 하는 객체지향 프로그래밍 언어, 소프트웨어 플랫폼**
 * Programming : Pro (미리) + Gram (쓰다) -> 앞으로 할 일을 미리 적어두는 작업
 * Class 영역 : 객체 지향 문법 적용 단위
@@ -208,7 +209,7 @@ default			// case에 없는 기본값
 	System.out.println("n = 0");
 
 * while : 조건에 맞는 동한 반복 실행
-[while, do while]
+[while, do while : 조건에 맞으면 실행, 무조건 1번은 실행]
 int n = 0;
 while (n <= 3) {		// n이 3이하인 동안 반복
 	n++;
@@ -234,11 +235,36 @@ for (int i = 0; i < 10; i++) {
 		break;			// i == 5면 반복문 그만
 	System.out.println(i);		// 0, 1, 2, 3, 4
 }
-break Exit;				
+break Exit;
 ```
+### Class
 
-Class
-do while (n >=5) {		// 조건에 맞지 않아도 1번 실행
-	n++;
+* 객체 (Object) : 속성, 기능을 가지는 프로그램단위
+* 속성 (Attribute) : 객체만의 고유한 값 (변수로 저장)
+* 기능 (Method) : 객체가 수행할 수 있는 행동 (함수로 구현)
+* 객체 지향 : 객체에서 유의마한 정보를 추출 (추상화)하여 프로그램에 적재하는 문법 체계
+* 클래스 (자료형) ; 동일한 종류의 객체에 필요한 메모리 공간 제공 (정의 -> 공간 형성)
+* Private
+* Static
+* 메모리 영역
+  1. Stack 영역 : {} 내에 생성되는 공간 (int, double)
+  2. Heap 영역 : 객체 저장 영역 (new 예약어)
+  3. Class 영역 (Method 영역( : 공유 메모리 영역 (static, 생성자, 일반 메서드)
+  * EX) SCanner sc = new Scanner(System.in);
+    1. Scanner sc : Stack - Scanner 클래스 자료형으로 정의된 참조 변수 sc
+    2. new : Heap - 영역에 객체 저장
+    3. Scanner() : Class - 객체에 초기값 부여를 위한 생성자 메서드
+
+```
+* 기본형 (class 동일 문서, 외부 문서에 작성)
+class C01Person {
+	String name;
+	int age;
+	String addr;
 }
+C01Person hong = new C01Person();
+hong.name = "홍길동";
+hong.age = 44;
+hong.addr = "서울";
+System.out.printf("%s, %d, %s \n", hong.name, hong.age, hong.addr);
 ```
