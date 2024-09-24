@@ -237,6 +237,7 @@ for (int i = 0; i < 10; i++) {
 }
 break Exit;
 ```
+
 ### Class
 
 * 객체 (Object) : 속성, 기능을 가지는 프로그램단위
@@ -244,8 +245,11 @@ break Exit;
 * 기능 (Method) : 객체가 수행할 수 있는 행동 (함수로 구현)
 * 객체 지향 : 객체에서 유의마한 정보를 추출 (추상화)하여 프로그램에 적재하는 문법 체계
 * 클래스 (자료형) ; 동일한 종류의 객체에 필요한 메모리 공간 제공 (정의 -> 공간 형성)
-* Private
-* Static
+  * Default : 같은 패키지 내에서만 접근 가능 (기본 접근 제한자) 
+  * Public : 접근 제한 X
+  * Private : 해당 클래스 내에서만 접근 가능 
+  * Protected : 같은 패키지, 타 패키지의 자식 클래스에서 접근 가능
+  * Static : 한 번만 생성되며 모든 인스턴스가 공유
 * 메모리 영역
   1. Stack 영역 : {} 내에 생성되는 공간 (int, double)
   2. Heap 영역 : 객체 저장 영역 (new 예약어)
@@ -256,15 +260,45 @@ break Exit;
     3. Scanner() : Class - 객체에 초기값 부여를 위한 생성자 메서드
 
 ```
-* 기본형 (class 동일 문서, 외부 문서에 작성)
-class C01Person {
+* Default (동일 package 내에 생성)
+class C01Person {						// 클래스 생성
 	String name;
 	int age;
 	String addr;
 }
-C01Person hong = new C01Person();
+C01Person hong = new C01Person();				// 참조 변수 생성
 hong.name = "홍길동";
 hong.age = 44;
 hong.addr = "서울";
 System.out.printf("%s, %d, %s \n", hong.name, hong.age, hong.addr);
+
+* 매개변수 생성자 (Parameter Constructor) : 오버라이딩 (매개변수의 수, 자료형에 따라 같은 이름의 다른 생성자 호출) 이용
+class C02Person {
+	String name;
+	int age;
+	C02Person () {
+		name = null;		age = 0;		// 기본값 name = null; age = 0;
+	}
+	C02Person (String name) {
+		this.name = name;	age = 0;		// C02Person의 name = this.name으로 구분
+	}
+	C02Person (int age) {
+		this(null, age);				// 마지막 생성자 호출 (축약 기능)
+	}
+	C02Person (String name, int age) {
+		this.name = name;	this.age = age;
+	}
+	C02Person (String ...str) { 				// 가변 인자 : 매개변수 값을 String 형태의 배열로 저장
+		name = str[0];		age = str[1];	
+	}
+}
+
+* Private : 외부에서 접근이 불가능 -> 값을 출력, 입력하기 위한 방법 : Getter, Setter
+class C03Person {
+	private name;
+	public String getName() {return this.name)}		// 기존 name 반환
+	public void setName(String name) {this.name = name;}	// 기존 name = 입력 name
+}
 ```
+
+**배열**
