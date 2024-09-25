@@ -313,8 +313,10 @@ class C03Person {
 -------
 **상속 (Inheritance) : 기존 클래스를 재활용하여 새로운 클래스 작성**
 * 부모 클래스 (Super Class) / 자식 클래스 (Sub ClasS) : 자식 클래스는 부모 클래스의 객체, 메서드 사용 가능
-* 업캐스팅 (UpCasting) : 부모 클래스로 상속 관계인 클래스의 모든 객체를 받아오기 위한 자동형변환 (자식 클래스 객체 사용 X -> DownCasting 필요)
-* 다우캐스팅 (DownCasting) : 부모 클래스의 하위 클래스 객체 사용을 위한 강제형변환 (자식 클래스 객체 사용 O)
+* 업캐스팅 (UpCasting) : 부모 클래스로 상속 관계인 클래스의 모든 객체를 받아오기 위한 자동형변환
+  - 자식 클래스 객체 사용 X -> DownCasting 필요
+* 다운캐스팅 (DownCasting) : 부모 클래스의 하위 클래스 객체 사용을 위한 강제형변환
+  - 자식 클래스 객체 사용 O
 * 오버라이딩 (OverRiding) : 상속 받은 메서드의 내용 변경 (재정의) -> 다형성
 
 ```
@@ -356,11 +358,14 @@ public static void main(String[] args) {
 **추상**
 * 추상 메소드 (abstract method) : 자식 클래스에서 오버라이딩해야 사용 가능항 클래스
 * 추상 클래스 (abstract class) : 하나 이상의 추상 메소드를 포함하는 클래스
+* 인터페이스 (Interface) : 동일한 메소드만 가지는 추상 클래스
+  
 ```
+* 추상 클래스
 abstract class Super {					// 추상 클래스 선언
 	int n;
 	void n() {
-		n = 100;
+		n = 15;
 	}
 	abstract void func();				// 추상 메소드 선언 (인스턴스 X)
 }
@@ -369,7 +374,7 @@ class Sub1 extends Super {
 	Sub1(int a) {this.a = a;}
 	void func() {					// 자식 클래스에서 오버라이딩
 		a += 10;
-		System.out.println(a);
+		System.out.println("a : " + a);
 	}
 }
 class Sub2 extends Super {
@@ -377,21 +382,68 @@ class Sub2 extends Super {
 	Sub2(int b) {this.b = b;}
 	void func() {					// 자식 클래스에서 오버라이딩
 		b--;
-		System.out.println(b);
+		System.out.println("b : " + b);
 	}
 }
+
+* 인터페이스
+interface Parent {					// interface 클래스 선언 == 부모 클래스
+	int NUM1 = 100;					// public static fianl 형태의 수 = 고정된 값
+	int NUM2 = 200;
+	void method1();
+	void method2(int num);
+}
+class Son1 implements Parent {				// implments 클래스 선언 == 자식 클래스
+	int num1;
+	int num2;
+	public void method1() {				// public으로 작성
+		num1 = NUM2;
+		System.out.println("num1 : " + num1);
+	}
+	public void method2(int num) {
+		num2 = num;
+		System.out.println("num2 : " + num2);
+	}
+}
+class Son2 extends Super implements Parent {		// extends, interface 동시 사용 가능
+	int num3;
+	int num4;
+	int num5;
+	public void method1() {				// Parents method
+		num3 = 120;
+		System.out.println("num3 : " + num3);
+	}
+	public void method2(int num) {			// Parents method
+		num4 = num - NUM2;
+		System.out.println("num4 : " + num4);
+	}
+	void func() {					// Super method
+		num5 = NUM1 + NUM2;
+		System.out.println("num5 : " + num5);
+	}	
+}
+
 class main {
-	public static void Abstract(Super abs) {
+	public static void Abstract(Super abs) {	
 		abs.func();
 	}
+	public static void Interface(Parent inter) {	
+		inter.method1();
+		inter.method2(500);
+	}
 	public static void main(String[] args) {
-		// Super obj = new Super();		// 추상 클래스는 객체 생성 불가
+//		 Super obj = new Super();		// 추상 클래스는 객체 생성 불가
 		Sub1 obj2 = new Sub1(1);		// 자식 클래스는 객체 생성 가능
 		Sub2 obj3 = new Sub2(2);		// 자식 클래스는 객체 생성 가능
 		Super obj4 = (Super) obj3;		// UpCasting으로 부모 클래스 객체 생성 가능
 
 		Abstract(new Sub1(10));
 		Abstract(new Sub2(5));
+		
+		Son2 ob = new Son2();			
+		Interface(new Son1());			// Parent method - interface
+		Interface(new Son2());			// Parent method - interface
+		ob.func();				// Super method - abstract
 	}
 }
 ```
