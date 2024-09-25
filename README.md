@@ -15,7 +15,7 @@
 [03.화면 설계.pdf](https://github.com/user-attachments/files/17124103/03.pdf)                
 [Screen_Plan](3.Screen_Plan/README.md)         
 
-**04.Screen_IMPL (8/16 ~ 9/6)**                       
+**04.Screen_IMPL (8/16 ~ 9/7)**                       
 [04.화면 구현.pdf](https://github.com/user-attachments/files/17124099/04.pdf)               
 [04.UI 테스트.pdf](https://github.com/user-attachments/files/17124107/04.UI.pdf)                
 [HTML](4.Screen_IMPL/01.HTML/README.md)                       
