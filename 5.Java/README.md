@@ -352,3 +352,46 @@ public static void main(String[] args) {
 	obj4.B();		// 자식 클래스의 메서드 사용 가능
 }
 ```
+
+**추상**
+* 추상 메소드 (abstract method) : 자식 클래스에서 오버라이딩해야 사용 가능항 클래스
+* 추상 클래스 (abstract class) : 하나 이상의 추상 메소드를 포함하는 클래스
+```
+abstract class Super {					// 추상 클래스 선언
+	int n;
+	void n() {
+		n = 100;
+	}
+	abstract void func();				// 추상 메소드 선언 (인스턴스 X)
+}
+class Sub1 extends Super {
+	int a;
+	Sub1(int a) {this.a = a;}
+	void func() {					// 자식 클래스에서 오버라이딩
+		a += 10;
+		System.out.println(a);
+	}
+}
+class Sub2 extends Super {
+	int b;
+	Sub2(int b) {this.b = b;}
+	void func() {					// 자식 클래스에서 오버라이딩
+		b--;
+		System.out.println(b);
+	}
+}
+class main {
+	public static void Abstract(Super abs) {
+		abs.func();
+	}
+	public static void main(String[] args) {
+		// Super obj = new Super();		// 추상 클래스는 객체 생성 불가
+		Sub1 obj2 = new Sub1(1);		// 자식 클래스는 객체 생성 가능
+		Sub2 obj3 = new Sub2(2);		// 자식 클래스는 객체 생성 가능
+		Super obj4 = (Super) obj3;		// UpCasting으로 부모 클래스 객체 생성 가능
+
+		Abstract(new Sub1(10));
+		Abstract(new Sub2(5));
+	}
+}
+```
