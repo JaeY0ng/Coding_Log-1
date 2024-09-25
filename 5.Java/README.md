@@ -6,7 +6,7 @@
 3. Window -> Show View -> Other -> Git Repositories, Git Staging
 4. Github -> New Repository -> add Readme 해제 -> Repository HTTPS 복사
 5. Git Repositories -> Java Project -> Remote -> Create Remote -> Github Repository Link와 연결
-* (Import -> Project from git -> Clone URL)
+* Import -> Project from git -> Clone URL : Git Repository, Git File 모두 생성
 
 **Java Basic : C언어 (절차 지향)와 C++언어 (객체 지향)를 기반으로 하는 객체지향 프로그래밍 언어, 소프트웨어 플랫폼**
 * Programming : Pro (미리) + Gram (쓰다) -> 앞으로 할 일을 미리 적어두는 작업
@@ -250,10 +250,11 @@ break Exit;
   * Private : 해당 클래스 내에서만 접근 가능 
   * Protected : 같은 패키지, 타 패키지의 자식 클래스에서 접근 가능
   * Static : 한 번만 생성되며 모든 인스턴스가 공유
+* 오버로딩 (OverLoading) : 매개변수의 수, 자료형에 따라 같은 이름의 다른 생성자 호출
 * 메모리 영역
   1. Stack 영역 : {} 내에 생성되는 공간 (int, double)
   2. Heap 영역 : 객체 저장 영역 (new 예약어)
-  3. Class 영역 (Method 영역( : 공유 메모리 영역 (static, 생성자, 일반 메서드)
+  3. Class 영역 (Method 영역) : 공유 메모리 영역 (static, 생성자, 일반 메서드)
   * EX) SCanner sc = new Scanner(System.in);
     1. Scanner sc : Stack - Scanner 클래스 자료형으로 정의된 참조 변수 sc
     2. new : Heap - 영역에 객체 저장
@@ -272,14 +273,14 @@ hong.age = 44;
 hong.addr = "서울";
 System.out.printf("%s, %d, %s \n", hong.name, hong.age, hong.addr);
 
-* 매개변수 생성자 (Parameter Constructor) : 오버라이딩 (매개변수의 수, 자료형에 따라 같은 이름의 다른 생성자 호출) 이용
+* 매개변수 생성자 (Parameter Constructor) 
 class C02Person {
 	String name;
 	int age;
 	C02Person () {
 		name = null;		age = 0;		// 기본값 name = null; age = 0;
 	}
-	C02Person (String name) {
+	C02Person (String name) { 				// 오버로딩
 		this.name = name;	age = 0;		// C02Person의 name = this.name으로 구분
 	}
 	C02Person (int age) {
@@ -302,13 +303,52 @@ class C03Person {
 ```
 
 **배열 (Array)**
-* 원시 배열
-* 다차원 배열
+* 원시 배열 : int[] A = new int[5];
+* 다차원 배열 : int A[2][2];
 * 클래스 배열
-* 얕은 복사 / 깊은 복사
+* 얕은 복사 : 주소 복사
+* 깊은 복사 : 내용 복사
 
 ### 상속
-* 오버라이딩
-* 오버로딩
-* 업케스팅 / 다운케스팅
-* 추상클래스
+-------
+**상속 (Inheritance) : 기존 클래스를 재활용하여 새로운 클래스 작성**
+* 부모 클래스 (Super Class) / 자식 클래스 (Sub ClasS) : 자식 클래스는 부모 클래스의 객체, 메서드 사용 가능
+* 업캐스팅 (UpCasting) : 부모 클래스로 상속 관계인 클래스의 모든 객체를 받아오기 위한 자동형변환 (자식 클래스 객체 사용 X -> DownCasting 필요)
+* 다우캐스팅 (DownCasting) : 부모 클래스의 하위 클래스 객체 사용을 위한 강제형변환 (자식 클래스 객체 사용 O)
+* 오버라이딩 (OverRiding) : 상속 받은 메서드의 내용 변경 (재정의) -> 다형성
+
+```
+class Super {
+	int a;
+	void A() {
+		a = 10;
+	}
+}
+class Sub extends Super { 	// Super 클래스 상속
+	int b;
+	void A() {		// OverRiding
+		a = 20;		// 상속 받은 객체 a 사용 가능
+	}
+	void B() {
+		b = 50;
+	}
+}
+
+public static void main(String[] args) {
+	Super obj1 = new Super();
+	obj1.A();		
+	// obj1.B();		// 자식 클래스의 메서드 -> Err
+
+	Sub obj2 = new Sub();
+	obj2.A();		// 부모 클래스 메서드
+	obj2.B();
+
+	Super obj3 = new Sub();	// UpCasting <- 부모 클래스 obj3를 자식 클래스로 확장 (자동 형변환)
+	obj3.A();		// a = 20 <- OverRiding된 자식 클래스 메서드 호출 (Method 구조는 공유 메모리인 Class 영역에 저장)
+	// obj3.B();		// UpCasting 상태에서 자식 클래스 메서드 사용 불가 -> DownCasting 필요
+
+	Sub obj4 = (Sub) obj3;	// DownCasting <- 부모 클래스 obj3를 자식 클래스로 변환 (강제 형변환)
+	obj4.A();
+	obj4.B();		// 자식 클래스의 메서드 사용 가능
+}
+```
