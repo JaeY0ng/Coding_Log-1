@@ -381,7 +381,7 @@ class Sub1 extends Super {
 		System.out.println("a : " + a);
 	}
 }
-class Sub2 extends Super {
+class Sub2 extends Super {				// extends 다중 상속 X 
 	int b;
 	Sub2(int b) {this.b = b;}
 	void func() {					// 자식 클래스에서 오버라이딩
@@ -409,7 +409,7 @@ class Son1 implements Parent {				// implments 클래스 선언 == 자식 클래
 		System.out.println("num2 : " + num2);
 	}
 }
-class Son2 extends Super implements Parent {		// extends, interface 동시 사용 가능
+class Son2 extends Super implements Parent {		// extends, interface 동시 사용 가능 (extends 다음 interface)
 	int num3;
 	int num4;
 	int num5;
