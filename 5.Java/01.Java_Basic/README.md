@@ -1,4 +1,4 @@
-# 05. Java (9/7 ~ )
+# 01. Java_Basic (9/7 ~ 9/26)
 
 **Github <-> Eclipse**
 1. Eclipse에서 Java Project 생성
