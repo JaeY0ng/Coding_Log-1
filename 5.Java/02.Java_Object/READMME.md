@@ -67,8 +67,8 @@ System.out.println(cal.DAY_OF_WEEK);        // 일~토 (1~7)
 
 ----------------------------------------------
 ## Exception
- * 예외처리
-   * generic
+* 오류 (Error) : (메모리 부족)
+* 예외 (Exception) : (다른 자료형)
 
 
 * list
