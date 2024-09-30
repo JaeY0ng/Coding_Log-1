@@ -23,7 +23,7 @@ public int hashCode() {}              // Object.equal -> hashcode equal
 * 참조형 변수 (Reference Type) : 기본형 변수를 제외한 나머지 변수 (클래스, 배열)
 |기본형 변수|참조형 변수|
 |-|-|
-|byte|Byte|
+|byte|Byte|  
 |char|Character|
 |int|Integer|
 |short|Short|
