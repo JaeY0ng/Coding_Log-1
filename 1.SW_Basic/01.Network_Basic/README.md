@@ -120,3 +120,5 @@ IP : 10.5.4.9
  4. PC Web Browser 칸에 서버 주소 (문자, 숫자) 입력 시에 연결 가능 여부 확인
     
 ![dns](https://github.com/user-attachments/assets/6f60bda0-5e5e-4aaa-af48-eae48c20bb4e)
+
+hi ( jaeYong 왔다감  )
