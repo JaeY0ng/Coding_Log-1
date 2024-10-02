@@ -67,8 +67,15 @@ System.out.println(cal.DAY_OF_WEEK);        // 일~토 (1~7)
 
 ----------------------------------------------
 ## Exception
-* 오류 (Error) : (메모리 부족)
-* 예외 (Exception) : (다른 자료형)
+* Error : 프로그램 코드로 처리 불가능한 오류 (메모리 부족)
+* Exception (예외) : 프로그램 코드로 처리 가능한 오류 (다른 자료형)
+  * Checked : 오류 발생 시점 확인 가능 -> 예외 처리 필수
+  * Unchecked : 오류 발생 시점 확인 불가능 -> 예외 처리 선택
+```
+* throw
+
+* try, catch
+```
 
 
 * list
